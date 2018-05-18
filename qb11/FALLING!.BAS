@@ -1,0 +1,18 @@
+CLS
+t = 0
+
+LOCATE 24, 1
+COLOR 7
+PRINT STRING$(80, CHR$(219))
+LET g = 1
+FOR i = 4250 TO 100 STEP -50
+t = t + 1
+IF t = 4 THEN LET t = 0: COLOR 0: LOCATE g, 40: : PRINT CHR$(5): LET g = g + 1: COLOR 14: LOCATE g, 40: PRINT CHR$(5)
+SOUND i, 1
+NEXT i
+
+
+SOUND 37, 1
+SOUND 38, 1
+
+

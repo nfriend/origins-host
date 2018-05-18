@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>origins-host</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style type="text/css">
+        @font-face {
+            font-family: MSDOS;
+            src: url(dos.ttf);
+        }
+
+        .dosbox-container {
+            width: 640px;
+            height: 400px;
+            font-family: 'MSDOS', monospace;
+        }
+
+        .dosbox-container * {
+            color: white !important;
+        }
+
+        .st-loader:before,
+        .st-loader:after {
+            border-color: white !important
+        }
+
+        .st-loader .equal {
+            border-color: white !important
+        }
+
+        #fullscreen-button {
+            position: relative;
+            left: 226px;
+            margin-top: 10px;
+            font-family: 'MSDOS', monospace;
+            font-size: 16px;
+        }
+
+        #fullscreen-icon {
+            margin-left: -5px;
+            margin-top: -3px;
+        }
+
+        #origins-overlay {
+            position: absolute;
+            top: 0;
+            width: 640px;
+            height: 400px;
+            font-family: 'MSDOS', monospace;
+            background-color: #333;
+            color: white;
+            z-index: 100;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        #origins-overlay .file-name {}
+    </style>
+</head>
+
+<body>
+    <div id="dosbox"></div>
+    <button id="fullscreen-button" class="btn btn-dark" onclick="dosbox.requestFullScreen();" disabled="disabled">
+        &lt;&gt; Make Fullscreen
+    </button>
+
+    <div id="origins-overlay">
+        <div>Choose A File To Run:</div>
+        <br />
+        <div class="file-name-container"></div>
+    </div>
+
+    <script type="text/javascript" src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <script type="text/javascript" src="files.js"></script>
+    <script type="text/javascript" src="origins-host.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+CLS
+SCREEN 12
+top:
+ll = 120
+CIRCLE (400, 100), 70, 7
+PAINT (400, 100), 7, 7
+CIRCLE (300, 150), 60, 7
+PAINT (300, 150), 7, 7
+CIRCLE (350, 160), 60, 7
+PAINT (350, 160), 7, 7
+CIRCLE (200, 120), 80, 7
+PAINT (200, 120), 7, 7
+CIRCLE (300, 100), 50, 7
+PAINT (300, 100), 7, 7
+PAINT (300, 55), 7, 7
+PAINT (350, 200), 7, 7
+RANDOMIZE TIMER
+v = INT(RND * 50000) + 30000
+
+FOR i = 1 TO v
+NEXT i
+
+SLEEP 3
+
+RANDOMIZE TIMER
+w = INT(RND * 5) + 1
+IF w = 1 THEN LET lw = 200
+IF w = 2 THEN LET lw = 300
+IF w = 3 THEN LET lw = 400
+IF w = 4 THEN LET lw = 250
+IF w = 5 THEN LET lw = 350
+
+
+DO UNTIL ll > 640
+
+LET templw = lw
+LET templl = ll
+
+RANDOMIZE TIMER
+r = INT(RND * 6) + 1
+e = INT(RND * 2) + 1
+
+SELECT CASE r
+CASE 1
+LET lw = lw + 10
+CASE 2
+LET lw = lw + 15
+CASE 3
+LET lw = lw + 5
+CASE 4
+LET lw = lw - 5
+CASE 5
+LET lw = lw - 10
+CASE 6
+LET lw = lw - 15
+END SELECT
+
+SELECT CASE e
+CASE 1
+LET ll = ll + 25
+CASE 2
+LET ll = ll + 20
+CASE 3
+LET ll = ll + 15
+CASE 4
+LET ll = ll - 15
+CASE 5
+LET ll = ll - 20
+CASE 6
+LET ll = ll - 25
+END SELECT
+
+LINE (templw, templl)-(lw, ll), 14
+
+FOR p = 1 TO 5000
+NEXT p
+       
+LOOP
+
+LINE (0, 0)-(640, 480), 0, BF
+
+
+ll = 120
+CIRCLE (400, 100), 70, 7
+PAINT (400, 100), 7, 7
+CIRCLE (300, 150), 60, 7
+PAINT (300, 150), 7, 7
+CIRCLE (350, 160), 60, 7
+PAINT (350, 160), 7, 7
+CIRCLE (200, 120), 80, 7
+PAINT (200, 120), 7, 7
+CIRCLE (300, 100), 50, 7
+PAINT (300, 100), 7, 7
+PAINT (300, 55), 7, 7
+PAINT (350, 200), 7, 7
+
+RANDOMIZE TIMER
+o = INT(RND * 37) + 50
+oo = INT(RND * 37) + 50
+ooo = INT(RND * 37) + 50
+
+FOR i = 1 TO 5
+SOUND o, 1
+SOUND oo, 1
+SOUND ooo, 1
+NEXT i
+
+
+
+GOTO top
+

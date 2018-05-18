@@ -1,0 +1,89 @@
+start: cls
+input " Pick your planet (on the list below) to find your age on that planet.                                                                                           Mercury (ME), Venus (V), Earth (E), Mars (MA), Jupiter (J), Saturn (S),         Uranus (U), Neptune (N), Pluto (P) ",pickplanet$
+if pickplanet$ = "ME" or pickplanet$ = "me" then goto me
+if pickplanet$ = "V" or pickplanet$ = "v" then goto v
+if pickplanet$ = "E" or pickplanet$ = "e" then goto e
+if pickplanet$ = "MA" or pickplanet$ = "ma" then goto ma
+if pickplanet$ = "J" or pickplanet$ = "j" then goto j
+if pickplanet$ = "S" or pickplanet$ = "s" then goto s
+if pickplanet$ = "U" or pickplanet$ = "u" then goto u
+if pickplanet$ = "N" or pickplanet$ = "n" then goto n
+if pickplanet$ = "P" or pickplanet$ = "p" then goto p
+
+me: cls
+input "How old are you?",meold
+merold = meold / 0.2410958
+ty = round(merold)
+print "Your age on Mercury would be about ",ty,". Would you like to quit (q) or              retry this program (rp)?"
+input "", meqrp$
+if meqrp$ = "q" or meqrp$ = "Q" then end
+if meqrp$ = "rp" or meqrp$ = "RP" then goto start
+
+v: cls
+input "How old are you?",vold
+veold = vold / 0.6164383
+gh = round(veold)
+print "Your age on Venus would be about ",gh,". Would you like to quit (q) or                retry this program (rp)?"
+input "",vqrp$
+if vqrp$ = "q" or vqrp$ = "Q" then end
+if vqrp$ = "rp" or vqrp$ = "RP" then goto start  
+
+e: cls
+input "How old are you?",eold
+print "Your age on Earth are ",eold,". Would you like to quit (q) retry this program (rp)?"
+input "", eqrp$
+if eqrp$ = "q" or eqrp$ = "Q" then end
+if eqrp$ = "rp" or eqrp$ = "RP" then goto start
+
+ma: cls
+input "How old are you?",mold
+maold = mold / 1.8821917
+f = round(maold)
+print "Your age on Mars would be about ",f,". Would you like to quit (q) retry this        program (rp)?"
+input "", mqrp$
+if mqrp$ = "q" or mqrp$ = "Q" then end
+if mqrp$ = "rp" or mqrp$ = "RP" then goto start
+j: cls
+input "How old are you?",jold
+juold = jold / 11.860273
+pl = round(juold)
+print "Your age on Jupiter would be about ",pl,". Would you like to quit (q) or             retry this program (rp)?"
+input "",jqrp$
+if jqrp$ = "q" or jqrp$ = "Q" then end
+if jqrp$ = "rp" or jqrp$ = "RP" then goto start
+  
+s: cls
+input "How old are you?",sold
+saold = sold / 29.457534
+oi = round(saold)
+print "Your age on Saturn would be about ",oi,". Would you like to quit (q) or              retry this program (rp)?"
+input "",sqrp$
+if sqrp$ = "q" or sqrp$ = "Q" then end
+if sqrp$ = "rp" or sqrp$ = "RP" then goto start
+
+u: cls
+input "How old are you?",uold
+urold = uold / 80.010958
+fu = round(urold)
+print "Your age on Uranus would be about ",fu,". Would you like to quit (q) or              retry this program (rp)?"
+input "",uqrp$
+if uqrp$ = "q" or uqrp$ = "Q" then end
+if uqrp$ = "rp" or uqrp$ = "RP" then goto start
+
+n: cls 
+input "How old are you?",nold
+neold = nold / 165
+er = round(neold)
+print "Your age on Neptune would be about ",er,". Would you like to quit (q) or             retry this program (rp)?"
+input "",nqrp$
+if nqrp$ = "q" or nqrp$ = "Q" then end
+if nqrp$ = "rp" or nqrp$ = "RP" then goto start
+
+p: cls
+input "How old are you?",pold
+plold = pold / 248
+we = round(plold)
+print "Your age on Pluto would be about ",we,". Would you like to quit (q) or               retry this program (rp)?"
+input "",pqrp$
+if pqrp$ = "q" or pqrp$ = "Q" then end
+if pqrp$ = "rp" or pqrp$ = "RP" then goto start

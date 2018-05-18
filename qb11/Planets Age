@@ -1,0 +1,46 @@
+start: cls
+Input " Pick your planet (on the list below) to find your age on that planet.                                                                                           Mercury (ME) Venus (V) Mars (MA) Jupiter (J) Saturn (S) Uranus (U) Neptune (N)  Pluto (P) ",pickplanet$
+if pickplanet$ = "ME" or pickplanet$ = "me" then goto me
+if pickplanet$ = "V" or pickplanet$ = "v" then goto v
+if pickplanet$ = "MA" or pickplanet$ = "ma" then goto ma
+if pickplanet$ = "J" or pickplanet$ = "j" then goto j
+if pickplanet$ = "S" or pickplanet$ = "s" then goto s
+if pickplanet$ = "U" or pickplanet$ = "u" then goto u
+if pickplanet$ = "N" or pickplanet$ = "n" then goto n
+if pickplanet$ = "P" or pickplanet$ = "p" then goto p
+if pickplanet$ = "Q" or pickplanet$ = "q" then end
+
+
+me: Print " You have succesfully reached Mercury. "
+Sleep 5
+end  
+
+v: Print " You have succesfully reached Venus. "
+Sleep 5
+end  
+
+ma: Print " You have succesfully reached Mars. "
+Sleep 5
+end  
+
+j: Print " You have succesfully reached Jupiter. "
+Sleep 5
+end  
+
+s: Print " You have succesfully reached Saturn. "
+Sleep 5
+end 
+
+u: Print " You have succesfully reached Uranus. "
+Sleep 5
+end  
+
+n: Print " You have succesfully reached Neptune. "
+Sleep 5
+end
+  
+p: Print " You have succesfully reached Pluto. "
+Sleep 5
+end  
+ 
+ 

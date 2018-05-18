@@ -1,0 +1,1 @@
+@qbasic /run high.bas
