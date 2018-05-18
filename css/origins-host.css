@@ -1,0 +1,58 @@
+@font-face {
+    font-family: MSDOS;
+    /* src: url(../fonts/dos.ttf); */
+    src: url(../fonts/LessPerfectDOSVGA.ttf);
+}
+
+.dosbox-container {
+    width: 640px;
+    height: 400px;
+    font-family: 'MSDOS', monospace;
+}
+
+.dosbox-container * {
+    color: white !important;
+}
+
+.st-loader:before,
+.st-loader:after {
+    border-color: white !important;
+}
+
+.st-loader .equal {
+    border-color: white !important;
+}
+
+#fullscreen-button {
+    position: relative;
+    left: 226px;
+    margin-top: 10px;
+    font-family: 'MSDOS', monospace;
+    font-size: 16px;
+}
+
+#fullscreen-icon {
+    margin-left: -5px;
+    margin-top: -3px;
+}
+
+#origins-overlay {
+    position: absolute;
+    top: 0;
+    width: 640px;
+    height: 400px;
+    font-family: 'MSDOS', monospace;
+    background-color: #333;
+    color: white;
+    z-index: 100;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#origins-overlay .file-name {
+    color: #ccc;
+}
+
+#origins-overlay .file-name.selected {
+    color: white;
+}
