@@ -14,7 +14,7 @@ CLS
 
 LINE INPUT "Code name?    ", codename$
 code$ = MID$(codename$, 1, 8)
-file$ = "c:/QSAVE/CODES/" + code$ + ".txt"
+file$ = "./save/CODES/" + code$ + ".txt"
 
 OPEN file$ FOR OUTPUT AS #1
 PRINT #1, codename$

@@ -15,7 +15,7 @@ NEXT i
 'LET npassword$ = npassword$ + d$
 'NEXT e
 
-OPEN "c:/docume~1/friend~1/desktop/" + filename$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/" + filename$ + ".txt" FOR OUTPUT AS #1
 PRINT #1, password$
 CLOSE
 
@@ -31,7 +31,7 @@ CLS
 PRINT "Type your message now:"
 PRINT
 
-OPEN "c:/docume~1/friend~1/desktop/" + filename$ + ".txt" FOR APPEND AS #1
+OPEN "./save/" + filename$ + ".txt" FOR APPEND AS #1
 
 DO UNTIL h$ = CHR$(27)
 h$ = INKEY$

@@ -23,7 +23,7 @@ n$ = INKEY$
 LOOP
 IF n$ = "1" THEN GOTO top
 IF n$ = "2" THEN
-        OPEN "c:/QSAVE/DRAWINGS/names.txt" FOR INPUT AS #1
+        OPEN "./save/DRAWINGS/names.txt" FOR INPUT AS #1
         LOCATE 3, 1
         DO UNTIL EOF(1)
         INPUT #1, a$
@@ -40,13 +40,13 @@ IF n$ = "2" THEN
 LOCATE 1, 1
 INPUT "Filename?  ", filename$
 CLOSE
-OPEN "c:/QSAVE/DRAWINGS/names.txt" FOR INPUT AS #1
+OPEN "./save/DRAWINGS/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 input #1
 
 
-OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1: CLS : LET eraser = 5: inputer: DO WHILE INKEY$ = "": LOOP: STOP
-IF n$ = "3" THEN INPUT "Filename?  ", filename$: OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1: CLS : LET eraser = 5: inputer: LET tempcolor = colr * 4 + 4: GOTO here
+OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1: CLS : LET eraser = 5: inputer: DO WHILE INKEY$ = "": LOOP: STOP
+IF n$ = "3" THEN INPUT "Filename?  ", filename$: OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1: CLS : LET eraser = 5: inputer: LET tempcolor = colr * 4 + 4: GOTO here
 
 
 
@@ -60,7 +60,7 @@ increments
 colors
 
 backgroundcolor
-OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR OUTPUT AS #1
 PRINT #1, circles
 PRINT #1, incs
 PRINT #1, colr
@@ -68,7 +68,7 @@ PRINT #1, bakc
 CLS
 GOTO there
 here:
-OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
+OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
 there:
 eraser = 5
 DO WHILE i$ <> CHR$(27)
@@ -353,7 +353,7 @@ END SUB
 
 SUB inputer
 CLOSE
-OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1
+OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR INPUT AS #1
 INPUT #1, circles
 INPUT #1, incs
 INPUT #1, colr
@@ -468,7 +468,7 @@ IF u$ = "1" THEN
         LET l = 175
         CLS
         inputer
-        OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
+        OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
 END IF
 IF u$ = "2" THEN
         increments
@@ -479,7 +479,7 @@ IF u$ = "2" THEN
         LET l = 175
         CLS
         inputer
-        OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
+        OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
 END IF
 IF u$ = "3" THEN
         colors
@@ -490,7 +490,7 @@ IF u$ = "3" THEN
         LET l = 175
         CLS
         inputer
-        OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
+        OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
 END IF
 IF u$ = "4" THEN
         backgroundcolor
@@ -501,7 +501,7 @@ IF u$ = "4" THEN
         LET l = 175
         CLS
         inputer
-        OPEN "c:/QSAVE/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
+        OPEN "./save/DRAWINGS/" + filename$ + ".txt" FOR APPEND AS #1
 END IF
 
 END SUB

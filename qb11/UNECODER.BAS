@@ -1,7 +1,7 @@
 CLS
 top:
 INPUT "File name?  ", filename$
-OPEN "c:/docume~1/friend~1/desktop/" + filename$ + ".txt" FOR INPUT AS #1
+OPEN "./save/" + filename$ + ".txt" FOR INPUT AS #1
 INPUT #1, password$
 'FOR e = 1 TO LEN(password$)
 'LET temp = ASC(MID$(password$, e, e))

@@ -4,7 +4,7 @@
 INPUT name$
 8 INPUT "Would you like to restore an o-old game or start a n-new one?", yn$
 9 IF yn$ = "n" THEN GOTO 20
-file$ = "b:\basic\arena\save\" + name$
+file$ = "./save/arena/save/" + name$
 10 OPEN file$ FOR INPUT AS #1
 12 INPUT #1, pro$
 13 INPUT #1, stam, ag, inte, str, spe, per, ste
@@ -535,7 +535,7 @@ SELECT CASE g$
 15110 IF ic$ = "int" THEN inte = inte + 1: PRINT "Intelligence is now "; inte: GOTO 15200
 15120 GOTO 15030
 15200 NEXT ti
-file$ = "b:\basic\arena\save\" + name$
+file$ = "./save/arena/save/" + name$
 15210 OPEN file$ FOR OUTPUT AS #1
 15230 PRINT #1, pro$
 15235 PRINT #1, stam, ag, inte, str, spe, per, ste

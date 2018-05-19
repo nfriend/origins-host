@@ -1188,7 +1188,7 @@ SUB restoregame
 CLOSE
 CLS
 restoretop:
-OPEN "c:/QSAVE/ADVNTURE/names.txt" FOR INPUT AS #1
+OPEN "./save/ADVNTURE/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 INPUT #1, m$(t)
 PRINT m$(t)
@@ -1209,7 +1209,7 @@ PRINT "Sorry, but there is no game called "; filename$; ".  Please choose a name
 
 opener:
 CLOSE
-LET file$ = "c:/QSAVE/ADVNTURE/" + UCASE$(filename$) + ".txt"
+LET file$ = "./save/ADVNTURE/" + UCASE$(filename$) + ".txt"
 OPEN file$ FOR INPUT AS #1
 INPUT #1, agi
 INPUT #1, edu
@@ -1275,18 +1275,18 @@ INPUT "File name  (type in c to cancel)  ?  ", file$
 IF file$ = "c" OR file$ = "C" THEN GOTO saveend
 IF LEN(file$) > 8 THEN PRINT "Sorry, but your name cannot be larger than 8 characters.": PRINT "Press any key to continue...": DO WHILE INKEY$ = "": LOOP: GOTO savetop
 CLOSE
-OPEN "c:/QSAVE/ADVNTURE/names.txt" FOR INPUT AS #1
+OPEN "./save/ADVNTURE/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 INPUT #1, ju$
 IF UCASE$(ju$) = UCASE$(file$) THEN PRINT "Sorry, but there already is a file named '"; file$; ".'": PRINT "Press any ley to continue...": DO WHILE INKEY$ = "": LOOP: GOTO savetop
 LOOP
 CLOSE
 
-OPEN "c:/QSAVE/ADVNTURE/names.txt" FOR APPEND AS #1
+OPEN "./save/ADVNTURE/names.txt" FOR APPEND AS #1
 PRINT #1, file$
 CLOSE
 
-files$ = "c:/QSAVE/ADVNTURE/" + file$ + ".txt"
+files$ = "./save/ADVNTURE/" + file$ + ".txt"
 OPEN files$ FOR OUTPUT AS #1
 PRINT #1, agi
 PRINT #1, edu

@@ -156,7 +156,7 @@ IF time = 2 THEN LET hardness = 3
 score = (right - missed - wrong) * hardness
 PRINT "Your score: "; score
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/musichi/phiscres.txt" FOR INPUT AS #1
+OPEN "./musichi/phiscres.txt" FOR INPUT AS #1
 
 FOR i = 1 TO 9
         INPUT #1, highname$(i)
@@ -180,7 +180,7 @@ LOCATE 5, 4
 INPUT "Please type in your name: ", name$
 
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/musichi/phiscres.txt" FOR OUTPUT AS #1
+OPEN "./musichi/phiscres.txt" FOR OUTPUT AS #1
 u = 1
 DO UNTIL highscores(u) < score
 PRINT #1, highname$(u)
@@ -200,7 +200,7 @@ LOOP
 printhi:
 CLOSE
 
-OPEN "c:/work/nathan/qbasic~1/musichi/phiscres.txt" FOR INPUT AS #1
+OPEN "./musichi/phiscres.txt" FOR INPUT AS #1
 
 y = 12
 

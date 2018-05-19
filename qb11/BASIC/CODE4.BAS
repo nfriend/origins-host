@@ -1,6 +1,6 @@
 REM THIS PROGRAM TAKES SENTENCES AND PUTS THEM INTO CODE
 REM this next line is the one that changes the location of the file
-OPEN "b:\basic\code.txt" FOR OUTPUT AS #1
+OPEN "./save/code.txt" FOR OUTPUT AS #1
 DO
 PRINT "Please enter the sentence to be changed."
 PRINT "Or just type enter to stop writing."

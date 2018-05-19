@@ -8,7 +8,7 @@ DIM punc3$(92 TO 96)
 DIM punc4$(123 TO 126)
 DIM number$(48 TO 57)
 
-OPEN "c:/QSAVE/CODES/HJK.txt" FOR INPUT AS #1
+OPEN "./save/CODES/HJK.txt" FOR INPUT AS #1
 
 
 LINE INPUT #1, codename$

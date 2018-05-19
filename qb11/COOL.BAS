@@ -93,14 +93,14 @@ INPUT " ", presetname$
 IF LEN(presetname$) > 16 THEN LOCATE 4, 2: PRINT "Sorry, but your name is too long. ": LOCATE 5, 2: PRINT "Please type a name that has less then 17 characters.": LOCATE 7, 2: PRINT "Press any key to continue...": DO WHILE INKEY$ = "": LOOP: GOTO topofhere
 
 LET presetname$ = UCASE$(presetname$)
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR INPUT AS #1
-OPEN "c:/work/nathan/qbasic~1/save/tempcol.txt" FOR OUTPUT AS #2
+OPEN "./save/colors.txt" FOR INPUT AS #1
+OPEN "./save/tempcol.txt" FOR OUTPUT AS #2
 DO UNTIL EOF(1)
 INPUT #1, g$
 PRINT #2, g$
 LOOP
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR INPUT AS #1
+OPEN "./save/colors.txt" FOR INPUT AS #1
 INPUT #1, ffff
 FOR i = 1 TO ffff
         INPUT #1, yy$
@@ -148,8 +148,8 @@ NEXT i
 
 
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR OUTPUT AS #1
-OPEN "c:/work/nathan/qbasic~1/save/tempcol.txt" FOR INPUT AS #2
+OPEN "./save/colors.txt" FOR OUTPUT AS #1
+OPEN "./save/tempcol.txt" FOR INPUT AS #2
 INPUT #2, olde
 PRINT #1, olde + 1
 DO UNTIL EOF(2)
@@ -168,7 +168,7 @@ DIM t$(entries + 3)
 top:
 CLOSE
 CLS
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR INPUT AS #1
+OPEN "./save/colors.txt" FOR INPUT AS #1
 
 INPUT #1, entries
 REDIM t$(entries + 3)
@@ -200,7 +200,7 @@ NEXT i
 
 CLOSE
 
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR INPUT AS #1
+OPEN "./save/colors.txt" FOR INPUT AS #1
 
 INPUT #1, entries
 
@@ -225,7 +225,7 @@ GOTO top
 
 inputc:
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/colors.txt" FOR INPUT AS #1
+OPEN "./save/colors.txt" FOR INPUT AS #1
 
 INPUT #1, entries
 

@@ -4,7 +4,7 @@ COMMON SHARED a$
 CLS
 
 LINE INPUT "Username?  ", un$
-OPEN "c:/Qsave/a.txt" FOR OUTPUT AS #1
+OPEN "./save/a.txt" FOR OUTPUT AS #1
 PRINT #1, un$
 CLOSE
 
@@ -29,14 +29,14 @@ DO UNTIL d$ = CHR$(13)
 LOOP
 
 CLS
-OPEN "c:/Qsave/a.txt" FOR INPUT AS #1
+OPEN "./save/a.txt" FOR INPUT AS #1
 LINE INPUT #1, a$
 CLOSE
 
 IF p2$ = p$ THEN PRINT "Your passwords matched.": SLEEP 3: scrambler
 IF p2$ <> p$ THEN PRINT "Your two passwords did not match.  Press any key to continue...": DO WHILE INKEY$ = "": LOOP: GOTO top
 
-KILL "c:/Qsave/a.txt"
+KILL "./save/a.txt"
 
 SUB scrambler
 
@@ -65,7 +65,7 @@ f = f + (d + e)
 
 u = 0
 
-files$ = "c:/QSAVE/SCRAMBLR/" + file$ + ".txt"
+files$ = "./save/SCRAMBLR/" + file$ + ".txt"
 
 OPEN files$ FOR OUTPUT AS #1
 ff = 0

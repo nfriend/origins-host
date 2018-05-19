@@ -296,7 +296,7 @@ IF fromgame = 1 THEN
 LOCATE 2, 2
 PRINT "Your score: "; score
 END IF
-OPEN "c:/work/nathan/qbasic~1/save/tetris/hiscores.txt" FOR INPUT AS #1
+OPEN "./save/tetris/hiscores.txt" FOR INPUT AS #1
 
 FOR i = 1 TO 10
 INPUT #1, highname$(i)
@@ -329,7 +329,7 @@ IF score > highscores(10) AND fromgame = 1 THEN
         IF score < highscores(i) THEN LET highscores(i) = score: LET highname$(i) = name$: LET highlines(i) = lines: EXIT FOR
         NEXT i
        
-        OPEN "c:/work/nathan/qbasic~1/save/tetris/hiscores.txt" FOR OUTPUT AS #1
+        OPEN "./save/tetris/hiscores.txt" FOR OUTPUT AS #1
         FOR y = 1 TO 10
         PRINT #1, highname$(y)
         PRINT #1, highscores(y)
@@ -420,7 +420,7 @@ printtop:
 CLS
 LOCATE 2, 2
 PRINT "Here are a list of games:"
-OPEN "c:/work/nathan/qbasic~1/save/tetris/ttrsnams.txt" FOR INPUT AS #1
+OPEN "./save/tetris/ttrsnams.txt" FOR INPUT AS #1
 
 LET u = 0
 DO UNTIL EOF(1)
@@ -464,7 +464,7 @@ IF sounds = 1 THEN SOUND 880, 0
 GOTO printtop
 
 checkedout:
-OPEN "c:/work/nathan/qbasic~1/save/tetris/" + whichgame$ + ".txt" FOR INPUT AS #1
+OPEN "./save/tetris/" + whichgame$ + ".txt" FOR INPUT AS #1
 
 
 
@@ -1215,7 +1215,7 @@ IF LEN(gamename$) < 1 OR LEN(gamename$) > 8 THEN
         GOTO savetop
 END IF
 
-OPEN "c:/work/nathan/qbasic~1/save/tetris/ttrsnams.txt" FOR INPUT AS #1
+OPEN "./save/tetris/ttrsnams.txt" FOR INPUT AS #1
 LET gamename$ = UCASE$(gamename$)
 DO UNTIL EOF(1)
 INPUT #1, a$
@@ -1234,13 +1234,13 @@ CLOSE
 
 IF overwrite = 1 THEN GOTO endofname
 
-OPEN "c:/work/nathan/qbasic~1/save/tetris/ttrsnams.txt" FOR APPEND AS #1
+OPEN "./save/tetris/ttrsnams.txt" FOR APPEND AS #1
 PRINT #1, gamename$
 CLOSE
 
 endofname:
 
-OPEN "c:/work/nathan/qbasic~1/save/tetris/" + gamename$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/tetris/" + gamename$ + ".txt" FOR OUTPUT AS #1
 
 FOR i = 1 TO 260
 PRINT #1, blocks(i)

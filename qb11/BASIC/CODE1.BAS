@@ -1,6 +1,6 @@
 REM THIS PROGRAM TAKES SENTENCES AND PUTS THEM INTO CODE
 REM Just a normal a=1 z=26 type code
-OPEN "b:\basic\code.txt" FOR OUTPUT AS #1
+OPEN "./save/code.txt" FOR OUTPUT AS #1
 DO
 PRINT "Please enter the sentence to be changed."
 PRINT "Or just type enter to stop writing."

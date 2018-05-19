@@ -107,7 +107,7 @@ LET name$ = UCASE$(name$)
 LET namelength = LEN(name$)
 IF namelength > 8 THEN PRINT "Sorry, but your file is to long.  Press any key to continue...": DO WHILE INKEY$ = "": LOOP: CLS : GOTO nameagain
 
-OPEN "c:/work/nathan/qbasic~1/save/names.txt" FOR INPUT AS #1
+OPEN "./save/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 aa = aa + 1
 INPUT #1, previousnames$(aa)
@@ -124,7 +124,7 @@ CLOSE
 
 
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/names.txt" FOR APPEND AS #1
+OPEN "./save/names.txt" FOR APPEND AS #1
 PRINT #1, name$
 CLOSE
 
@@ -160,7 +160,7 @@ END SELECT
 
 
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/" + name$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/" + name$ + ".txt" FOR OUTPUT AS #1
 CLOSE
 
 writefile:
@@ -197,7 +197,7 @@ NEXT b
 NEXT i
 
 
-OPEN "c:/work/nathan/qbasic~1/save/" + name$ + ".txt" FOR OUTPUT AS #2
+OPEN "./save/" + name$ + ".txt" FOR OUTPUT AS #2
 PRINT #2, name$
 PRINT #2, reaction
 FOR j = 1 TO 8
@@ -225,7 +225,7 @@ PRINT #2, enemynumber
 PRINT #2, tfood
 CLOSE
 
-OPEN "c:/work/nathan/qbasic~1/save/average/" + name$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/average/" + name$ + ".txt" FOR OUTPUT AS #1
 CLOSE
 
 CALL main
@@ -501,7 +501,7 @@ CLS
 SCREEN 0
 
 CLOSE
-OPEN "c:/work/nathan/qbasic~1/save/average/" + name$ + ".txt" FOR APPEND AS #1
+OPEN "./save/average/" + name$ + ".txt" FOR APPEND AS #1
 FOR i = 1 TO j
 PRINT #1, averagetime(i)
 NEXT i
@@ -543,7 +543,7 @@ END SUB
 SUB loadgame
 top:
 CLS
-OPEN "c:/work/nathan/qbasic~1/save/names.txt" FOR INPUT AS #1
+OPEN "./save/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 FOR i = 1 TO 9
 IF EOF(1) THEN EXIT DO
@@ -562,7 +562,7 @@ PRINT
 INPUT "What file would you like to load?  ", load$
 
 LET load$ = UCASE$(load$)
-OPEN "c:/work/nathan/qbasic~1/save/names.txt" FOR INPUT AS #1
+OPEN "./save/names.txt" FOR INPUT AS #1
 DO UNTIL EOF(1)
 INPUT #1, tempname$
 IF tempname$ = load$ THEN GOTO cleared
@@ -577,7 +577,7 @@ DO WHILE INKEY$ = ""
 LOOP
 GOTO top
 cleared:
-OPEN "c:/work/nathan/qbasic~1/save/" + load$ + ".txt" FOR INPUT AS #2
+OPEN "./save/" + load$ + ".txt" FOR INPUT AS #2
 INPUT #2, name$
 INPUT #2, reaction
 FOR j = 1 TO 8
@@ -778,7 +778,7 @@ IF back = 1 THEN GOTO here
 END SUB
 
 SUB save
-OPEN "c:/work/nathan/qbasic~1/save/" + name$ + ".txt" FOR OUTPUT AS #2
+OPEN "./save/" + name$ + ".txt" FOR OUTPUT AS #2
 PRINT #2, name$
 PRINT #2, reaction
 FOR j = 1 TO 8
@@ -1323,7 +1323,7 @@ IF reaction = 3 THEN PRINT "Now, move on to the next level.  Your reaction speed
 IF reaction = 1 THEN
         PRINT
         CLOSE
-        OPEN "c:/work/nathan/qbasic~1/average/" + name$ + ".txt" FOR INPUT AS #1
+        OPEN "./save/average/" + name$ + ".txt" FOR INPUT AS #1
         DO UNTIL EOF(1)
                 INPUT #1, inputed
                 LET addtime = addtime + inputed
@@ -1333,11 +1333,11 @@ IF reaction = 1 THEN
         LET finalscore = CINT(addtime / amountadd)
         LET finalscore = 200000
         PRINT "Your overall score is"; finalscore; "."
-        OPEN "c:/work/nathan/qbasic~1/save/highscor.txt" FOR APPEND AS #1
+        OPEN "./save/highscor.txt" FOR APPEND AS #1
         PRINT #1, name$
         PRINT #1, finalscore
         CLOSE
-        OPEN "c:/work/nathan/qbasic~1/save/highscor.txt" FOR INPUT AS #1
+        OPEN "./save/highscor.txt" FOR INPUT AS #1
         DO UNTIL EOF(1)
         LET r = r + 1
         INPUT #1, tempname$(r)

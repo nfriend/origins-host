@@ -7,7 +7,7 @@ DIM SHARED existname$(100)
 COMMON SHARED name$, career$
 
 
-OPEN "C:/QSAVE/CAREER/NAMES.TXT" FOR INPUT AS #1
+OPEN "./save/CAREER/NAMES.TXT" FOR INPUT AS #1
 
 y = 1
 
@@ -36,11 +36,11 @@ g = g + 1
 LOOP
 
 writename:
-OPEN "c:/QSAVE/CAREER/" + name$ + ".txt" FOR OUTPUT AS #1
+OPEN "./save/CAREER/" + name$ + ".txt" FOR OUTPUT AS #1
 PRINT #1, name$
 
 IF overwrite$ <> "y" THEN
-        OPEN "c:/QSAVE/CAREER/NAMES.TXT" FOR APPEND AS #2
+        OPEN "./save/CAREER/NAMES.TXT" FOR APPEND AS #2
         PRINT #2, name$
 END IF
 

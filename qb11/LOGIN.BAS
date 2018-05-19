@@ -46,8 +46,8 @@ CASE 3
         END
 CASE 67
        CLS
-       KILL "c:/QSAVE/username.txt"
-       KILL "c:/QSAVE/password.txt"
+       KILL "./username.txt"
+       KILL "./password.txt"
        PRINT "All logs have been erased."
        END
 CASE ELSE
@@ -69,8 +69,8 @@ i$ = INKEY$
 IF i$ <> "" AND i$ <> CHR$(13) THEN PRINT "*"; : password$ = password$ + i$
 LOOP UNTIL i$ = CHR$(13)
 PRINT ""
-OPEN "c:/QSAVE/username.txt" FOR INPUT AS #1
-OPEN "c:/QSAVE/password.txt" FOR INPUT AS #2
+OPEN "./username.txt" FOR INPUT AS #1
+OPEN "./password.txt" FOR INPUT AS #2
 DO UNTIL EOF(1)
 INPUT #1, name$
 INPUT #2, pass$
@@ -125,9 +125,9 @@ END IF
 
 
 nexts:
-OPEN "c:/QSAVE/username.txt" FOR APPEND AS #1
+OPEN "./username.txt" FOR APPEND AS #1
 PRINT #1, name$
-OPEN "c:/QSAVE/password.txt" FOR APPEND AS #2
+OPEN "./password.txt" FOR APPEND AS #2
 PRINT #2, pass$
 CLOSE
 CLS

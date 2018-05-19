@@ -19,7 +19,7 @@ NEXT i
 
 
 
-OPEN "c:/QSAVE/CODES/HJK.txt" FOR INPUT AS #1
+OPEN "./save/CODES/HJK.txt" FOR INPUT AS #1
 
 LINE INPUT #1, codename$
 
@@ -83,7 +83,7 @@ NEXT in7
       
 
 CLOSE
-OPEN "c:/QSAVE/CODES/HJK.txt" FOR OUTPUT AS #1
+OPEN "./save/CODES/HJK.txt" FOR OUTPUT AS #1
 PRINT "Code name:   "; codename$; ""
 PRINT #1, codename$
 

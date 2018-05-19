@@ -1,5 +1,5 @@
 CLS
-OPEN "c:/Qsave/dctionry.txt" FOR APPEND AS #1
+OPEN "./save/dctionry.txt" FOR APPEND AS #1
 here:
 INPUT "Word?  ", word$
 IF word$ = "9" THEN CLOSE : END

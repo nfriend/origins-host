@@ -10,7 +10,7 @@ INPUT "File name? ", file$
 
 IF LEN(file$) > 8 OR LEN(file$) = 0 THEN PRINT "Sorry, but your file name cannot be greater and 8 or less than 1.": PRINT "Press any key to continue...": DO WHILE INKEY$ = "": LOOP: CLS : GOTO filetop
 
-files$ = "c:/QSAVE/SCRAMBLR/" + file$ + ".txt"
+files$ = "./save/SCRAMBLR/" + file$ + ".txt"
 
 r = 0
 
