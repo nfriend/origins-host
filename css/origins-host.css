@@ -23,12 +23,23 @@
     border-color: white !important;
 }
 
-#fullscreen-button {
-    position: relative;
-    left: 226px;
+#toolbar-button-group-container {
+    width: 640px;
+    text-align: center;
+}
+
+#toolbar-button-group-container #toolbar-button-group {
+    display: inline-block;
     margin-top: 10px;
     font-family: 'MSDOS', monospace;
     font-size: 16px;
+}
+
+#toolbar-button-group-container #toolbar-button-group button {
+    border-radius: 0;
+    font-weight: normal;
+    width: 200px;
+    background-color: #333;
 }
 
 #fullscreen-icon {

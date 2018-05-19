@@ -6,7 +6,7 @@ $(function() {
         end: 12
     };
 
-    var dosbox = new Dosbox({
+    window.dosbox = new Dosbox({
         id: 'dosbox',
         onload: function(dosbox) {
             dosbox.run('qb11.zip', './' + window.files[selectedIndex].command);
@@ -68,11 +68,47 @@ $(function() {
 
             renderList(selectedIndex);
         } else if (ev.which === 13) {
-            document.querySelector('.dosbox-start').click();
-            $('#origins-overlay').hide();
-            $window.off('keydown', handleKeydowns);
+            selectCurrentFile();
         }
     }
 
+    function selectCurrentFile() {
+        $('.dosbox-start').click();
+        $('#origins-overlay').hide();
+        $window.off('keydown', handleKeydowns);
+    }
+
     $window.on('keydown', handleKeydowns);
+
+    // if a filename was passed through a query parameter,
+    // i.e. https://nathanfriend.io/subpath/another?file=advnture.bas
+    // then auto-load that file if it exists.
+    var initialFileName = getQueryParameterByName('file');
+    if (initialFileName) {
+        var initialFile = window.files.filter(function(f) {
+            return f.name.toLowerCase() === initialFileName.toLowerCase();
+        })[0];
+
+        console.log('initialFile:', initialFile);
+        if (initialFile) {
+            selectedIndex = window.files.indexOf(initialFile);
+            selectCurrentFile();
+        }
+    }
+
+    function getQueryParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    window.reloadPage = function() {
+        console.log(window.location.href)
+        window.location.href = window.location.href.replace(/\?.*$/, '');
+        //window.location.reload();
+    }
 });

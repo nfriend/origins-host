@@ -17,12 +17,21 @@
 
 <body>
     <div id="dosbox"></div>
-    <button id="fullscreen-button"
-            class="btn btn-dark"
-            onclick="dosbox.requestFullScreen();"
-            disabled="disabled">
-        &lt;&gt; Make Fullscreen
-    </button>
+
+    <div id="toolbar-button-group-container">
+        <div id="toolbar-button-group"
+             class="btn-group"
+             role="group"
+             aria-label="Basic example">
+            <button id="fullscreen-button"
+                    type="button"
+                    class="btn btn-dark"
+                    onclick="window.dosbox.requestFullScreen();"
+                    disabled="disabled">Make Fullscreen</button>
+            <button type="button"
+                    class="btn btn-dark" onclick="window.reloadPage();">Start Over</button>
+        </div>
+    </div>
 
     <div id="origins-overlay">
         <div>Use the arrow keys And ENTER to select a file to run:</div>
