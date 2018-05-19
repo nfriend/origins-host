@@ -43,6 +43,9 @@ $(function() {
 
     renderList(selectedIndex);
 
+    var jumpTimer;
+    var jumpPhrase = '';
+
     var $window = $(window);
 
     function handleKeydowns(ev) {
@@ -69,6 +72,32 @@ $(function() {
             renderList(selectedIndex);
         } else if (ev.which === 13) {
             selectCurrentFile();
+        } else if (ev.which >= 65 && ev.which <= 90) {
+            clearTimeout(jumpTimer);
+
+            jumpPhrase += String.fromCharCode(ev.which);
+
+            var filesClone = window.files.map(function(f) {
+                return f.name;
+            });
+            filesClone.push(jumpPhrase);
+            filesClone = filesClone.sort();
+            selectedIndex = filesClone.indexOf(jumpPhrase);
+
+            if (
+                selectedIndex < windowBounds.start ||
+                selectedIndex > windowBounds.end
+            ) {
+                windowBounds.start = Math.min(window.files.length - 12, selectedIndex - 1);
+                windowBounds.end = windowBounds.start + 12;
+
+
+            }
+            renderList(selectedIndex);
+
+            jumpTimer = setTimeout(function() {
+                jumpPhrase = '';
+            }, 1000);
         }
     }
 
@@ -107,8 +136,8 @@ $(function() {
     }
 
     window.reloadPage = function() {
-        console.log(window.location.href)
+        console.log(window.location.href);
         window.location.href = window.location.href.replace(/\?.*$/, '');
         //window.location.reload();
-    }
+    };
 });
