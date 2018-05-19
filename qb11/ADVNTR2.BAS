@@ -5,6 +5,9 @@ PRINT "begin a conversation with the local inn keeper."
 PRINT
 PRINT "Press any key to continue..."
 
+DO WHILE INKEY$ = ""
+LOOP
+
 CLS
 PRINT "He tells you strange tales about a warlord named Sonx.  As legend has it, "
 PRINT "he keeps a sword that was stolen from good King Jeb.  The ruler has"

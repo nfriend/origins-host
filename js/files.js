@@ -1,12 +1,12 @@
 window.files = [
     {
         name: 'ADVNTR2.BAS',
-        description: 'Description here.',
+        description: 'Version 2 (or maybe 3?) of an adventure game.  This one didn\'t make it very far - in fact, it does nothing except print out a couple paragraphs of backstory.',
         command: 'ADVNTR2.BAT'
     },
     {
         name: 'ADVNTUR1.BAS',
-        description: 'Description here.',
+        description: 'A partially-finished adventure game.',
         command: 'ADVNTUR1.BAT'
     },
     {
@@ -16,17 +16,17 @@ window.files = [
     },
     {
         name: 'ALNATTCK.BAS',
-        description: 'Description here.',
+        description: 'A short animation of an alien ship kidnapping a little man.',
         command: 'ALNATTCK.BAT'
     },
     {
         name: 'ANGLES.BAS',
-        description: 'Description here.',
+        description: 'A simple game (?) in which a player uses the "4" and "6" keys to control a moving line on the screen.  If I remember correctly, this was a proof-of-concept for a two-player snake-like game I planned on building.',
         command: 'ANGLES.BAT'
     },
     {
         name: 'ANIMA.BAS',
-        description: 'Description here.',
+        description: 'A Pong clone.  Not written by me - written by an uncle who introduced me to QBasic.  Use "8" and "2" to move the paddle.',
         command: 'ANIMA.BAT'
     },
     {

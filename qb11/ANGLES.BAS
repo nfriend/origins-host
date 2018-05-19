@@ -20,7 +20,7 @@ LET a = COS(d)
 LET x = x + a
 LET y = y + b
 PSET (x, y)
-FOR u = 1 TO 10000
+FOR u = 1 TO 10
 NEXT u
 'NEXT i
 LOOP

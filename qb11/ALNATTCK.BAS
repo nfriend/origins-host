@@ -11,7 +11,7 @@ CIRCLE (e, 40), 20, 0, , , .1
 PAINT (e, 40), 0, 0
 CIRCLE (u, 40), 20, 10, , , .1
 PAINT (u, 40), 10, 10
-FOR hj = 1 TO 5000
+FOR hj = 1 TO 50
 NEXT hj
 NEXT u
 
@@ -27,7 +27,7 @@ CIRCLE (w, n), 20, 0, , , .1
 PAINT (w, r), 0, 0
 CIRCLE (u, r), 20, 10, , , .1
 PAINT (u, r), 10, 10
-FOR hj = 1 TO 5000
+FOR hj = 1 TO 50
 NEXT hj
 NEXT u
 
@@ -39,7 +39,7 @@ CIRCLE (u, y), 20, 0, , , .1
 PAINT (u, y), 0, 0
 CIRCLE (u, r), 20, 10, , , .1
 PAINT (u, r), 10, 10
-FOR hj = 1 TO 5000
+FOR hj = 1 TO 50
 NEXT hj
 NEXT r
 
@@ -48,7 +48,7 @@ c = 300
 FOR y = 200 TO 360
 b = b - .3
 c = c + .3
-FOR timewaster = 1 TO 4000
+FOR timewaster = 1 TO 40
 NEXT timewaster
 LINE (c, y)-(b, y), 4
 NEXT y
@@ -58,7 +58,7 @@ c = 349
 FOR y = 360 TO 200 STEP -1
 b = b + .3
 c = c - .3
-FOR timewaster = 1 TO 4000
+FOR timewaster = 1 TO 40
 NEXT timewaster
 LINE (b, y)-(c, y), 0
 NEXT y
@@ -72,7 +72,7 @@ CIRCLE (e, r), 20, 0, , , .1
 PAINT (e, r), 0, 0
 CIRCLE (k, r), 20, 10, , , .1
 PAINT (k, r), 10, 10
-FOR hj = 1 TO 5000
+FOR hj = 1 TO 50
 NEXT hj
 NEXT k
 

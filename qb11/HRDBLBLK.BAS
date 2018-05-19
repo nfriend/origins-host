@@ -37,8 +37,9 @@ LET y2 = y2 + yinterval
 
 LINE (x1, y1)-(x2, y2), 9, BF
 
-FOR i = 1 TO (2500 - (50 * hit))
-NEXT i
+REM Commented out to speed up
+REM FOR i = 1 TO (2500 - (50 * hit))
+REM NEXT i
 
 IF x1 = 0 THEN LET xinterval = xinterval * -1
 

@@ -845,7 +845,7 @@ IF testnoyes$ = "" THEN DIM testing(5)
 FOR tester = 1 TO 5
 
 RANDOMIZE TIMER
-sleeptime = INT(RND * 2000000) + 160000
+sleeptime = INT(RND * 1000) + 100
 
 FOR i = 1 TO sleeptime
 LET r$ = INKEY$
