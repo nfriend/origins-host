@@ -31,22 +31,22 @@ window.files = [
     },
     {
         name: 'AROWKEYS.BAS',
-        description: 'Description here.',
+        description: 'A proof-of-concept program for interacting with the arrow keys.  After configuring the keys, a small circle can be moved around the screen using the selected keys.',
         command: 'AROWKEYS.BAT'
     },
     {
         name: 'BACH.BAS',
-        description: 'Description here.',
+        description: 'The right-hand portion of Bach\'s "Menuet 1", a beginner piano piece.  This program was designed to be played at exactly the same time as "BACHLEFT.BAS" - the left-hand portion of the piece.',
         command: 'BACH.BAT'
     },
     {
         name: 'BACHLEFT.BAS',
-        description: 'Description here.',
+        description: 'The left-hand portion of Bach\'s "Menuet 1", a beginner piano piece.  This program was designed to be played at exactly the same time as "BACH.BAS" - the right-hand portion of the piece.',
         command: 'BACHLEFT.BAT'
     },
     {
         name: 'BATLSHIP.BAS',
-        description: 'Description here.',
+        description: 'The beginnings of a Battleship game.  This one never made it past printing the intial game board.',
         command: 'BATLSHIP.BAT'
     },
     {
@@ -346,7 +346,7 @@ window.files = [
     },
     {
         name: 'STRESS.BAS',
-        description: 'Description here.',
+        description: 'A stress-relieving program in which you press any key to punch a representation of the person you are currently mad at, resulting in their eventual spontaneous combustion.<br /><br />  However, I made sure that <em>my</em> name could never be the target.',
         command: 'STRESS.BAT'
     },
     {

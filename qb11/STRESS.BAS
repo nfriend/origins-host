@@ -69,7 +69,7 @@ FOR u = 46 TO 35 STEP -1
         COLOR 1
         LOCATE 8, u
         PRINT CHR$(219)
-        FOR y = 1 TO 5000
+        FOR y = 1 TO 50
         NEXT y
 NEXT u
 
@@ -77,7 +77,7 @@ FOR u = 35 TO 45
         COLOR 0
         LOCATE 8, u
         PRINT CHR$(219)
-        FOR y = 1 TO 5000
+        FOR y = 1 TO 50
         NEXT y
 NEXT u
 
