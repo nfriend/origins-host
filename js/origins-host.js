@@ -9,7 +9,7 @@ $(function() {
     window.dosbox = new Dosbox({
         id: 'dosbox',
         onload: function(dosbox) {
-            dosbox.run('qb11.zip', './' + window.files[selectedIndex].command);
+            dosbox.run('qbasic.zip', './' + window.files[selectedIndex].command);
         },
         onrun: function(dosbox, app) {
             $('#fullscreen-button').prop('disabled', false);

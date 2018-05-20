@@ -326,7 +326,7 @@ SUB pmissed
 LINE (210, 98)-(270, 102), , BF
 LOCATE 19, 31
 PRINT realnote$
-FOR i = 1 TO 400000
+FOR i = 1 TO 4000
 LET y$ = INKEY$
 NEXT i
 END SUB
@@ -335,7 +335,7 @@ SUB pright
 FOR i = 25 TO 30
 CIRCLE (240, 100), i, 10
 NEXT i
-FOR i = 1 TO 400000
+FOR i = 1 TO 4000
 LET y$ = INKEY$
 NEXT i
 END SUB
@@ -415,7 +415,7 @@ PRINT "Problem notes:"
        
         LOCATE 10, 32
         PRINT realnote$
-        FOR i = 1 TO 2000000
+        FOR i = 1 TO 2000
         NEXT i
 LOOP
 END IF
@@ -471,7 +471,7 @@ PRINT "Problem notes:"
       
         LOCATE 10, 32
         PRINT realnote$
-        FOR i = 1 TO 2000000
+        FOR i = 1 TO 2000
         NEXT i
 LOOP
 END IF
@@ -527,7 +527,7 @@ PRINT "Problem notes:"
            
         LOCATE 10, 32
         PRINT realnote$
-        FOR i = 1 TO 2000000
+        FOR i = 1 TO 2000
         NEXT i
 LOOP
 END IF
@@ -550,7 +550,7 @@ LINE (270, i)-(210, y)
 NEXT i
 LOCATE 19, 31
 PRINT realnote$
-FOR i = 1 TO 400000
+FOR i = 1 TO 4000
 LET y$ = INKEY$
 NEXT i
 END SUB

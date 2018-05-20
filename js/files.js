@@ -51,57 +51,57 @@ window.files = [
     },
     {
         name: 'CAREER.BAS',
-        description: 'Description here.',
+        description: 'A career simulator in which the player chooses to be a shop keeper, a janitor, a construction worker, or a carpenter.  Unfortunately this game doesn\'t seem to do much more than ask you your name and exit.',
         command: 'CAREER.BAT'
     },
     {
         name: 'CELOHELP.BAS',
-        description: 'Description here.',
+        description: 'A flash-card game for cello students.  Users can be quized on their knowledge of bass clef, tenor clef, or treble clef.  See if you can make the high score list!',
         command: 'CELOHELP.BAT'
     },
     {
         name: 'CELOHLP2.BAS',
-        description: 'Description here.',
+        description: 'The much anticipated sequel to Cello Help I.  This version adds a "problem notes" feature as well some fancier graphics to indicate correct and incorrect guesses.',
         command: 'CELOHLP2.BAT'
     },
     {
         name: 'CHIMCLOK.BAS',
-        description: 'Description here.',
+        description: 'Draws an analog clock to the screen, complete with chiming sounds.  Unfortunately, this program runs much too slow on this platform.' ,
         command: 'CHIMCLOK.BAT'
     },
     {
         name: 'CIRCLES.BAS',
-        description: 'Description here.',
+        description: 'Not sure what this one is supposed to do - all it seems to do is draw a single pixel to the screen.',
         command: 'CIRCLES.BAT'
     },
     {
         name: 'CLOCK.BAS',
-        description: 'Description here.',
+        description: 'Draws an analog clock to the screen.  Unfortunately, this program runs much too slow on this platform.',
         command: 'CLOCK.BAT'
     },
     {
         name: 'CNVRSNS.BAS',
-        description: 'Description here.',
+        description: 'A unit conversion utility.  Doesns\'t seem to work very well - 57 millimeters equals 57 inches??',
         command: 'CNVRSNS.BAT'
     },
     {
         name: 'CNVRTR.BAS',
-        description: 'Description here.',
+        description: 'Doesnt\'t work.  Also not my own file - I must have found this one on the internet somewhere.',
         command: 'CNVRTR.BAT'
     },
     {
         name: 'CODEEDTR.BAS',
-        description: 'Description here.',
+        description: 'Doesn\'t work.  Seems to be some kind of secret code creator program.',
         command: 'CODEEDTR.BAT'
     },
     {
         name: 'CODEFNDR.BAS',
-        description: 'Description here.',
+        description: 'Doesn\'t work.  Seems to be some kind of secret code decryption tool.',
         command: 'CODEFNDR.BAT'
     },
     {
         name: 'CODEMAKR.BAS',
-        description: 'Description here.',
+        description: 'A secret code creator program.  It asks the user for each character\'s mapping, and then prints the pretty-prints the decryption key to the screen.',
         command: 'CODEMAKR.BAT'
     },
     {

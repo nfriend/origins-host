@@ -1,11 +1,10 @@
+COMMON SHARED name$, career$
+
 DECLARE SUB keeper ()
 CLS
 OPTION BASE 1
 
 DIM SHARED existname$(100)
-
-COMMON SHARED name$, career$
-
 
 OPEN "./save/CAREER/NAMES.TXT" FOR INPUT AS #1
 
