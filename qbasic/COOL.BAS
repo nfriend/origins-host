@@ -51,7 +51,7 @@ LET cc = 1
 FOR i = 1 TO 47 STEP 2
         FOR y = i TO 47 STEP 2
                 LINE (dots(i), dots(i + 1))-(dots(y), dots(y + 1)), c(cc)
-        FOR g = 1 TO 10000
+        FOR g = 1 TO 100
         NEXT g
         NEXT y
 LET cc = cc + 1
@@ -63,7 +63,7 @@ IF erasec = 1 THEN
         FOR i = 1 TO 47 STEP 2
                 FOR y = i TO 47 STEP 2
                         LINE (dots(i), dots(i + 1))-(dots(y), dots(y + 1)), 0
-                                FOR g = 1 TO 10000
+                                FOR g = 1 TO 100
                                  NEXT g
                 NEXT y
         NEXT i
