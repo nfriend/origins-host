@@ -11,7 +11,7 @@ window.files = [
     },
     {
         name: 'ADVNTURE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'ADVNTURE.BAT'
     },
     {
@@ -106,242 +106,242 @@ window.files = [
     },
     {
         name: 'COOL.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'COOL.BAT'
     },
     {
         name: 'CULUR.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'CULUR.BAT'
     },
     {
         name: 'DELETEME.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'DELETEME.BAT'
     },
     {
         name: 'DRAW!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'DRAW!.BAT'
     },
     {
         name: 'ECODER.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'ECODER.BAT'
     },
     {
         name: 'EXACTAGE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'EXACTAGE.BAT'
     },
     {
         name: 'FACTORS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'FACTORS.BAT'
     },
     {
         name: 'FALLING!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'FALLING!.BAT'
     },
     {
         name: 'FIGHT.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'FIGHT.BAT'
     },
     {
         name: "FILM'UP.BAS",
-        description: 'Description here.',
+        description: '',
         command: 'UP.BAS", description:T'
     },
     {
         name: 'FPOSES.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'FPOSES.BAT'
     },
     {
         name: 'FZYLOJIC.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'FZYLOJIC.BAT'
     },
     {
         name: 'GETNPUT.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GETNPUT.BAT'
     },
     {
         name: 'GIGA.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GIGA.BAT'
     },
     {
         name: 'GORILLA.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GORILLA.BAT'
     },
     {
         name: 'GRAPHER.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GRAPHER.BAT'
     },
     {
         name: 'GUESS!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GUESS!.BAT'
     },
     {
         name: 'GUESS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'GUESS.BAT'
     },
     {
         name: 'HARDBALL.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'HARDBALL.BAT'
     },
     {
         name: 'HRDBLBLK.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'HRDBLBLK.BAT'
     },
     {
         name: 'LILTHINY.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'LILTHINY.BAT'
     },
     {
         name: 'LOGIN.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'LOGIN.BAT'
     },
     {
         name: 'MASTRMND.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MASTRMND.BAT'
     },
     {
         name: 'MORSE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MORSE.BAT'
     },
     {
         name: 'MORSECDE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MORSECDE.BAT'
     },
     {
         name: 'MOZART.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MOZART.BAT'
     },
     {
         name: 'MSTRMND1.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MSTRMND1.BAT'
     },
     {
         name: 'MSTRMND2.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'MSTRMND2.BAT'
     },
     {
         name: 'NEWTETRS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'NEWTETRS.BAT'
     },
     {
         name: 'OLDTETRS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'OLDTETRS.BAT'
     },
     {
         name: 'PATIENCE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'PATIENCE.BAT'
     },
     {
         name: 'PIANOHLP.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'PIANOHLP.BAT'
     },
     {
         name: 'PIANOTWO.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'PIANOTWO.BAT'
     },
     {
         name: 'PUMPKIN.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'PUMPKIN.BAT'
     },
     {
         name: 'REACTION.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'REACTION.BAT'
     },
     {
         name: 'REPEAT.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'REPEAT.BAT'
     },
     {
         name: 'REVIZDRW.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'REVIZDRW.BAT'
     },
     {
         name: 'RINGS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'RINGS.BAT'
     },
     {
         name: 'SAVEDRAW.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SAVEDRAW.BAT'
     },
     {
         name: 'SCRAMBLR.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SCRAMBLR.BAT'
     },
     {
         name: 'SHAPE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SHAPE.BAT'
     },
     {
         name: 'SHAPES.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SHAPES.BAT'
     },
     {
         name: 'SHOOTER.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SHOOTER.BAT'
     },
     {
         name: 'SPIRO.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SPIRO.BAT'
     },
     {
         name: 'SPIRO3.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SPIRO3.BAT'
     },
     {
         name: 'SPIROGAF.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SPIROGAF.BAT'
     },
     {
         name: 'SPIROTWO.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SPIROTWO.BAT'
     },
     {
         name: 'STOPLITE.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'STOPLITE.BAT'
     },
     {
@@ -351,62 +351,62 @@ window.files = [
     },
     {
         name: 'STRMYDAY.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'STRMYDAY.BAT'
     },
     {
         name: 'SUITE1.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SUITE1.BAT'
     },
     {
         name: 'SWEET!!!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SWEET!!!.BAT'
     },
     {
         name: 'SWEET!!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'SWEET!!.BAT'
     },
     {
         name: 'TEST.BAT',
-        description: 'Description here.',
+        description: '',
         command: 'TEST.BAT'
     },
     {
         name: 'TETRIS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'TETRIS.BAT'
     },
     {
         name: 'TETRSMUS.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'TETRSMUS.BAT'
     },
     {
         name: 'UNECODER.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'UNECODER.BAT'
     },
     {
         name: 'UNSRMBLR.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'UNSRMBLR.BAT'
     },
     {
         name: 'VOLUMES.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'VOLUMES.BAT'
     },
     {
         name: 'WORDS!.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'WORDS!.BAT'
     },
     {
         name: 'WSTMNSTR.BAS',
-        description: 'Description here.',
+        description: '',
         command: 'WSTMNSTR.BAT'
     }
 ];

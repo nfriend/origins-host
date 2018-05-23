@@ -67,3 +67,13 @@
 #origins-overlay .file-name.selected {
     color: white;
 }
+
+.file-name-container {
+    width: 30%;
+    float: left;
+}
+
+.file-description-container {
+    width: 70%;
+    float: right;
+}

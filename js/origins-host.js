@@ -9,7 +9,10 @@ $(function() {
     window.dosbox = new Dosbox({
         id: 'dosbox',
         onload: function(dosbox) {
-            dosbox.run('qbasic.zip', './' + window.files[selectedIndex].command);
+            dosbox.run(
+                'qbasic.zip',
+                './' + window.files[selectedIndex].command
+            );
         },
         onrun: function(dosbox, app) {
             $('#fullscreen-button').prop('disabled', false);
@@ -36,6 +39,11 @@ $(function() {
                 text +
                 '</div>';
             newInnerHTML += fileHtml;
+
+            if (isSelected) {
+                var description = file.description || '<em>No description</em>'
+                $('.file-description-container').html(description);
+            }
         });
 
         $fileNameContainer.html(newInnerHTML);
@@ -88,10 +96,11 @@ $(function() {
                 selectedIndex < windowBounds.start ||
                 selectedIndex > windowBounds.end
             ) {
-                windowBounds.start = Math.min(window.files.length - 12, selectedIndex - 1);
+                windowBounds.start = Math.min(
+                    window.files.length - 12,
+                    selectedIndex - 1
+                );
                 windowBounds.end = windowBounds.start + 12;
-
-
             }
             renderList(selectedIndex);
 
