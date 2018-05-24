@@ -69,11 +69,11 @@ window.files = [
         description: 'Draws an analog clock to the screen, complete with chiming sounds.  Unfortunately, this program runs much too slow on this platform.' ,
         command: 'CHIMCLOK.BAT'
     },
-    {
-        name: 'CIRCLES.BAS',
-        description: 'Not sure what this one is supposed to do - all it seems to do is draw a single pixel to the screen.',
-        command: 'CIRCLES.BAT'
-    },
+    // {
+    //     name: 'CIRCLES.BAS',
+    //     description: 'Not sure what this one is supposed to do - all it seems to do is draw a single pixel to the screen.',
+    //     command: 'CIRCLES.BAT'
+    // },
     {
         name: 'CLOCK.BAS',
         description: 'Draws an analog clock to the screen.  Unfortunately, this program runs much too slow on this platform.',
@@ -84,21 +84,21 @@ window.files = [
         description: 'A unit conversion utility.  Doesns\'t seem to work very well - 57 millimeters equals 57 inches??',
         command: 'CNVRSNS.BAT'
     },
-    {
-        name: 'CNVRTR.BAS',
-        description: 'Doesnt\'t work.  Also not my own file - I must have found this one on the internet somewhere.',
-        command: 'CNVRTR.BAT'
-    },
-    {
-        name: 'CODEEDTR.BAS',
-        description: 'Doesn\'t work.  Seems to be some kind of secret code creator program.',
-        command: 'CODEEDTR.BAT'
-    },
-    {
-        name: 'CODEFNDR.BAS',
-        description: 'Doesn\'t work.  Seems to be some kind of secret code decryption tool.',
-        command: 'CODEFNDR.BAT'
-    },
+    // {
+    //     name: 'CNVRTR.BAS',
+    //     description: 'Doesnt\'t work.  Also not my own file - I must have found this one on the internet somewhere.',
+    //     command: 'CNVRTR.BAT'
+    // },
+    // {
+    //     name: 'CODEEDTR.BAS',
+    //     description: 'Doesn\'t work.  Seems to be some kind of secret code creator program.',
+    //     command: 'CODEEDTR.BAT'
+    // },
+    // {
+    //     name: 'CODEFNDR.BAS',
+    //     description: 'Doesn\'t work.  Seems to be some kind of secret code decryption tool.',
+    //     command: 'CODEFNDR.BAT'
+    // },
     {
         name: 'CODEMAKR.BAS',
         description: 'A secret code creator program.  It asks the user for each character\'s mapping, and then prints the pretty-prints the decryption key to the screen.',
@@ -106,27 +106,27 @@ window.files = [
     },
     {
         name: 'COOL.BAS',
-        description: '',
+        description: 'One of my favorite programs.  This program draws intricate esigns to the screen using the color palette of the user\'s choice.  Users can create their own color palettes, which are saved to the filesystem for later use.',
         command: 'COOL.BAT'
     },
     {
         name: 'CULUR.BAS',
-        description: '',
+        description: 'A colorful animation reminiscent of the old Microsoft 3D Pipes screensaver. Press "q" to quit.',
         command: 'CULUR.BAT'
     },
-    {
-        name: 'DELETEME.BAS',
-        description: '',
-        command: 'DELETEME.BAT'
-    },
+    // {
+    //     name: 'DELETEME.BAS',
+    //     description: '',
+    //     command: 'DELETEME.BAT'
+    // },
     {
         name: 'DRAW!.BAS',
-        description: '',
+        description: 'Another one of my favorite programs - you can tell I enjoyed working on this one by the number of arcane commands I built into the application.  This program is essentially a very confusing version of Microsoft Paint.  If you can get past the wall of text describing how to use the program, it\'s actually pretty fun!',
         command: 'DRAW!.BAT'
     },
     {
         name: 'ECODER.BAS',
-        description: '',
+        description: 'An encoder program that uses the provided password to encode a secret message.  Unfortunately there doesn\'t seem to be a way to <em>de-</em>code the message after it\'s saved to the files system...<br /><br />Handy tip: press "esc" to stop recording your secret message.',
         command: 'ECODER.BAT'
     },
     {
