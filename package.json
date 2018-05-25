@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A js-box (DOSBox) app to allow my old QBASIC programs to live on through the internet",
   "scripts": {
-    "serve": "http-server",
+    "serve": "node_modules/.bin/http-server",
     "build": "node build/build.js",
     "build:watch": "node build/watch.js"
   },
@@ -18,5 +18,8 @@
   "dependencies": {
     "archiver": "^2.1.1",
     "node-watch": "^0.5.8"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
   }
 }

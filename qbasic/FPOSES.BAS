@@ -1,7 +1,7 @@
 CLS
 top:
 
-time = 10100
+time = 100
 eagi = 12
 
 FOR i = 10 TO 18

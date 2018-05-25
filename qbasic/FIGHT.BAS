@@ -32,7 +32,7 @@ DO UNTIL ehealth = 0 OR health = 0
                 LOCATE 15, u
                 COLOR 12
                 PRINT CHR$(219)
-                FOR i = 1 TO 10100 'will be replace by time
+                FOR i = 1 TO 100 'will be replace by time
                 NEXT i
                 NEXT u
                 RANDOMIZE TIMER
@@ -50,7 +50,7 @@ DO UNTIL ehealth = 0 OR health = 0
                 LOCATE 15, u
                 COLOR 12
                 PRINT CHR$(219)
-                FOR i = 1 TO 10100 'will be replace by time
+                FOR i = 1 TO 100 'will be replace by time
                 NEXT i
                 NEXT u
                 RANDOMIZE TIMER
@@ -68,7 +68,7 @@ DO UNTIL ehealth = 0 OR health = 0
                 LOCATE 15, u
                 COLOR 12
                 PRINT CHR$(219)
-                FOR i = 1 TO 10100 'will be replace by time
+                FOR i = 1 TO 100 'will be replace by time
                 NEXT i
                 NEXT u
                 RANDOMIZE TIMER
@@ -86,7 +86,7 @@ DO UNTIL ehealth = 0 OR health = 0
                 LOCATE 15, u
                 COLOR 12
                 PRINT CHR$(219)
-                FOR i = 1 TO 10100 'will be replace by time
+                FOR i = 1 TO 100 'will be replace by time
                 NEXT i
                 NEXT u
                 RANDOMIZE TIMER
