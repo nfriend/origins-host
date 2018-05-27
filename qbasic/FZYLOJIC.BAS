@@ -25,7 +25,7 @@ LET errer = room - targettemp
 
 DO UNTIL d = 100
 RANDOMIZE TIMER
-d = INT(RND * 20000) + 1
+d = INT(RND * 100) + 1
 LOOP
 
 correct:

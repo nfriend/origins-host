@@ -183,29 +183,32 @@ window.files = [
             'A fighting simulator, for eventual use in my ADVNTURE.BAS game.  Another program that didn\'t make it much farther than the visual effects stage.  Use "a", "q", "l", "o", "1", "2", "7", and "8" to perform different moves.  Press "j" twice to quit.',
         command: 'FPOSES.BAT'
     },
-    {
-        name: 'FZYLOJIC.BAS',
-        description: '',
-        command: 'FZYLOJIC.BAT'
-    },
-    {
-        name: 'GETNPUT.BAS',
-        description: '',
-        command: 'GETNPUT.BAT'
-    },
+    // {
+    //     name: 'FZYLOJIC.BAS',
+    //     description: '',
+    //     command: 'FZYLOJIC.BAT'
+    // },
+    // {
+    //     name: 'GETNPUT.BAS',
+    //     description: '',
+    //     command: 'GETNPUT.BAT'
+    // },
     {
         name: 'GIGA.BAS',
-        description: '',
+        description:
+            'Bach\'s "Giga" from the Partita in B♭.  When played on piano, the left hand plays the melody by repeatedly jumping above and below the right hand.',
         command: 'GIGA.BAT'
     },
     {
         name: 'GORILLA.BAS',
-        description: '',
+        description:
+            "I wish I could say this was my program, but it's not.  This is a game developed by Microsoft that shipped with QBasic to demonstrate some of its capabilities.  It's surprisingly fun.",
         command: 'GORILLA.BAT'
     },
     {
         name: 'GRAPHER.BAS',
-        description: '',
+        description:
+            "I'm not sure what the purpose of this program is.  I would guess that it was supposed to eventually become a graphing calculator program of some sort.",
         command: 'GRAPHER.BAT'
     },
     {
