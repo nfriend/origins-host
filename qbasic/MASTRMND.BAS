@@ -77,10 +77,7 @@ IF ccolors2 = 3 THEN LET colors2 = 14: LET vv3$ = "Y"
 IF ccolors2 = 4 THEN LET colors2 = 10: LET vv3$ = "G"
 IF ccolors2 = 5 THEN LET colors2 = 9: LET vv3$ = "B"
 IF ccolors2 = 6 THEN LET colors2 = 5: LET vv3$ = "P"
-colors = 14
-colors1 = 10
-colors2 = 14
-PRINT colors, colors1, colors2
+REM PRINT colors, colors1, colors2
 
 COLOR 15
 PRINT "To use the chart below, type in the letter which has the desired color."

@@ -67,7 +67,7 @@ r = 1
 
 
 DO UNTIL what(r) = 0
-FOR i = 1 TO 3500
+FOR i = 1 TO 35
 NEXT i
 IF what(r) = 5 THEN LET g = g - 1: CIRCLE (o, g), 1, 14
 IF what(r) = 2 THEN LET g = g + 1: CIRCLE (o, g), 1, 14
@@ -90,7 +90,7 @@ r = 1
 
 
 DO UNTIL what(r) = 0
-FOR i = 1 TO 3500
+FOR i = 1 TO 35
 NEXT i
 IF what(r) = 5 THEN LET g = g - 1: CIRCLE (o, g), 1, 9
 IF what(r) = 2 THEN LET g = g + 1: CIRCLE (o, g), 1, 9
