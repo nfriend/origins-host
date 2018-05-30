@@ -213,57 +213,67 @@ window.files = [
     },
     {
         name: 'GUESS!.BAS',
-        description: 'Not what it seems at first glance... but I won\'t spoil it for you.',
+        description:
+            "Not what it seems at first glance... but I won't spoil it for you.",
         command: 'GUESS!.BAT'
     },
     {
         name: 'GUESS.BAS',
-        description: 'Another one of my favorite programs as a child.  This one is a game in which the player tries to guess a randomly generated number.',
+        description:
+            'Another one of my favorite programs as a child.  This one is a game in which the player tries to guess a randomly generated number.',
         command: 'GUESS.BAT'
     },
     {
         name: 'HARDBALL.BAS',
-        description: 'A paddle-and-ball game in which the player tries to keep the ball in play as long as possible.  Use "1" and "3" to move the paddle.<br /><br />On the original hardware, the gameplay would slowly speed up until it was impossible to get to the ball.  Unfortunately, the web version runs too slow for this feature to work, so it\'s been modified to always run at a constant speed.',
+        description:
+            'A paddle-and-ball game in which the player tries to keep the ball in play as long as possible.  Use "1" and "3" to move the paddle.<br /><br />On the original hardware, the gameplay would slowly speed up until it was impossible to get to the ball.  Unfortunately, the web version runs too slow for this feature to work, so it\'s been modified to always run at a constant speed.',
         command: 'HARDBALL.BAT'
     },
     {
         name: 'HRDBLBLK.BAS',
-        description: 'Similar to HARDBALL.BAS, but this one includes breakable blocks for an added challenge.  Use "1" and "3" to move the paddle.  Again, this program runs a little too slow on this platform.',
+        description:
+            'Similar to HARDBALL.BAS, but this one includes breakable blocks for an added challenge.  Use "1" and "3" to move the paddle.  Again, this program runs a little too slow on this platform.',
         command: 'HRDBLBLK.BAT'
     },
     {
         name: 'LILTHINY.BAS',
-        description: 'A prototype for a tank game.  Press "4" and "6" to move the turret.',
+        description:
+            'A prototype for a tank game.  Press "4" and "6" to move the turret.',
         command: 'LILTHINY.BAT'
     },
     {
         name: 'LOGIN.BAS',
-        description: 'A basic authentication manager.  All passwords are stored in plaintext, of course.<br /><br />Note: after creating a username/password, rerun the program using Shift+F5 to test out your new credentials.',
+        description:
+            'A basic authentication manager.  All passwords are stored in plaintext, of course.<br /><br />Note: after creating a username/password, rerun the program using Shift+F5 to test out your new credentials.',
         command: 'LOGIN.BAT'
     },
     {
         name: 'MASTRMND.BAS',
-        description: 'An implementation of the game "Mastermind", in which the player tries to guess a color combination.  After making a guess, the player is given feedback on their guess in the form of red or white squares - red = right color, right position; white = right color, wrong position.<br /><br />Unfortunately, it seems like the feedback logic never made it to prime time - the hints provided by the computer player are way off.',
+        description:
+            'An implementation of the game "Mastermind", in which the player tries to guess a color combination.  After making a guess, the player is given feedback on their guess in the form of red or white squares - red = right color, right position; white = right color, wrong position.<br /><br />Unfortunately, it seems like the feedback logic never made it to prime time - the hints provided by the computer player are way off.',
         command: 'MASTRMND.BAT'
     },
     {
         name: 'MORSE.BAS',
-        description: '',
+        description:
+            'A program that converts text to Morse code.  Start typing once the program starts to both see and hear your converted morse code.',
         command: 'MORSE.BAT'
     },
-    {
-        name: 'MORSECDE.BAS',
-        description: '',
-        command: 'MORSECDE.BAT'
-    },
+    // {
+    //     name: 'MORSECDE.BAS',
+    //     description: '',
+    //     command: 'MORSECDE.BAT'
+    // },
     {
         name: 'MOZART.BAS',
-        description: '',
+        description:
+            'Mozart\'s "Sonata in C" for piano.  This particular number is a bit less polished than some of my other .BAS performances.',
         command: 'MOZART.BAT'
     },
     {
         name: 'MSTRMND1.BAS',
-        description: 'An attempt to debug the logic errors in MASTRMND.BAS.  An unsuccessful effort, apparently.',
+        description:
+            'An attempt to debug the logic errors in MASTRMND.BAS.  An unsuccessful effort, apparently.',
         command: 'MSTRMND1.BAT'
     },
     // {
@@ -298,7 +308,7 @@ window.files = [
     },
     {
         name: 'PUMPKIN.BAS',
-        description: 'Draws a cheery jack-o\'-lantern to the screen.',
+        description: "Draws a cheery jack-o'-lantern to the screen.",
         command: 'PUMPKIN.BAT'
     },
     {
@@ -308,7 +318,8 @@ window.files = [
     },
     {
         name: 'REPEAT.BAS',
-        description: 'A line-drawing program that replays a drawing.  Draw using "5", "2", "1", and "3"; trigger the repeat with "q".',
+        description:
+            'A line-drawing program that replays a drawing.  Draw using "5", "2", "1", and "3"; trigger the repeat with "q".',
         command: 'REPEAT.BAT'
     },
     {
