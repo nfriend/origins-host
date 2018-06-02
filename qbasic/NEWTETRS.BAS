@@ -575,7 +575,7 @@ top:
 graphics
 LET time = 0
 
-DO UNTIL time = settime
+DO UNTIL time >= settime
 LET y$ = INKEY$
 
 IF y$ = d$ AND notbeenletgo = 1 THEN GOTO done

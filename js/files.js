@@ -283,27 +283,31 @@ window.files = [
     // },
     {
         name: 'NEWTETRS.BAS',
-        description: '',
+        description:
+            "A Tetris clone, complete with a high scores list, loading and saving functionality, key calibration, and lots and lots of sounds.<br /><br />Note that while I've slightly edited this program to run more quickly on this platform, it's still quite a bit more sluggish than when originally written.",
         command: 'NEWTETRS.BAT'
     },
     {
         name: 'OLDTETRS.BAS',
-        description: '',
+        description:
+            'A precursor to NEWTETRS.BAS, which is a better version of this program.',
         command: 'OLDTETRS.BAT'
     },
     {
         name: 'PATIENCE.BAS',
-        description: '',
+        description:
+            'Do you consider yourself a patient person?  Put yourself to the test with this program and see if you can make the high scores list.',
         command: 'PATIENCE.BAT'
     },
     {
         name: 'PIANOHLP.BAS',
-        description: '',
+        description: 'A piano version of the wildly popular CELOHELP.BAS.',
         command: 'PIANOHLP.BAT'
     },
     {
         name: 'PIANOTWO.BAS',
-        description: '',
+        description:
+            "Version II of PIANOHLP.BAS, which doesn't seem to have made much improvement over the original.",
         command: 'PIANOTWO.BAT'
     },
     {
@@ -313,7 +317,8 @@ window.files = [
     },
     {
         name: 'REACTION.BAS',
-        description: '',
+        description:
+            "A program to test your reaction speed.  Looking at the code, it's questionable whether or not the results it reports are accurate...",
         command: 'REACTION.BAT'
     },
     {
@@ -322,39 +327,41 @@ window.files = [
             'A line-drawing program that replays a drawing.  Draw using "5", "2", "1", and "3"; trigger the repeat with "q".',
         command: 'REPEAT.BAT'
     },
-    {
-        name: 'REVIZDRW.BAS',
-        description: '',
-        command: 'REVIZDRW.BAT'
-    },
-    {
-        name: 'RINGS.BAS',
-        description: '',
-        command: 'RINGS.BAT'
-    },
-    {
-        name: 'SAVEDRAW.BAS',
-        description: '',
-        command: 'SAVEDRAW.BAT'
-    },
+    // {
+    //     name: 'REVIZDRW.BAS',
+    //     description: '',
+    //     command: 'REVIZDRW.BAT'
+    // },
+    // {
+    //     name: 'RINGS.BAS',
+    //     description: '',
+    //     command: 'RINGS.BAT'
+    // },
+    // 
+    // This one is identical to DRAW!.BAS
+    // {
+    //     name: 'SAVEDRAW.BAS',
+    //     description: '',
+    //     command: 'SAVEDRAW.BAT'
+    // },
     {
         name: 'SCRAMBLR.BAS',
-        description: '',
+        description: 'An encryption tool that scrambles a secret message and writes it to a file.  Unfortunately, it seems that the corresponding program, UNSRMBLR.BAS, is broken, so we\'ll never know if it works!',
         command: 'SCRAMBLR.BAT'
     },
     {
         name: 'SHAPE.BAS',
-        description: '',
+        description: 'Draws a 3D shape to the screen.',
         command: 'SHAPE.BAT'
     },
     {
         name: 'SHAPES.BAS',
-        description: '',
+        description: 'Draws never-ending red balls to the screen.',
         command: 'SHAPES.BAT'
     },
     {
         name: 'SHOOTER.BAS',
-        description: '',
+        description: 'A small proof-of-concept game that allows the user to control a small red block (using "1", "2", "3", "5") which shoots lime green bullets (using "space").',
         command: 'SHOOTER.BAT'
     },
     {
@@ -415,7 +422,8 @@ window.files = [
     },
     {
         name: 'TETRIS.BAS',
-        description: '',
+        description:
+            'A precursor to NEWTETRS.BAS, which is a better version of this program.',
         command: 'TETRIS.BAT'
     },
     {
@@ -430,7 +438,7 @@ window.files = [
     },
     {
         name: 'UNSRMBLR.BAS',
-        description: '',
+        description: 'The counterpart to SCRAMBLR.BAS.  Unfortunately it\'s broken!',
         command: 'UNSRMBLR.BAT'
     },
     {
