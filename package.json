@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "node_modules/.bin/http-server",
     "build": "node build/build.js",
-    "build:watch": "node build/watch.js"
+    "build:watch": "node build/watch.js",
+    "build:watch:livereload": "node build/livereload.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "homepage": "https://github.com/nfriend/origins-host#readme",
   "dependencies": {
     "archiver": "^2.1.1",
+    "livereload": "^0.7.0",
     "node-watch": "^0.5.8"
   },
   "devDependencies": {

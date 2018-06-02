@@ -38,7 +38,7 @@ DECLARE SUB main ()
 DECLARE SUB graphics ()
 DECLARE SUB rand ()
 
-COMMON SHARED l$, r$, u$, d$, blocktype, blockcount, time, counter, position, blocknumber, t, direction$, nextblocknumber, nextblockcount, settime, fromline, multiplier, rotatekey$, toggle, notgame, noload, justload, fromgame, sounds, notbeenletgo
+COMMON SHARED l$, r$, u$, d$, blocktype, blockcount, time, counter, position, blocknumber, t, direction$, nextblocknumber, nextblockcount, settime, fromline, multiplier, rotatekey$, toggle, notgame, noload, justload, fromgame, sounds, notbeenletgo, timeFactor
 COMMON SHARED score, extra, lines
 
 SCREEN 12
@@ -48,6 +48,10 @@ SLEEP 3
 CLS
 LET toggle = 1
 LET sounds = 1
+
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
 'dimensions - 20 x 13
 
 'This program uses a grid system that starts with 1 in the upper right hand
@@ -71,7 +75,7 @@ DIM SHARED highname$(10)
 DIM SHARED highscores(10)
 DIM SHARED highlines(10)
 
-LET settime = 75000
+LET settime = 75000 * timeFactor
 RANDOMIZE TIMER
 nextblocknumber = INT(RND * 7) + 1
 startgame
@@ -186,7 +190,7 @@ startnew:
         LET fromgame = 0
         LET notgame = 0
        
-        LET settime = 75000
+        LET settime = 75000 * timeFactor
         startgame2
        
         CLS
@@ -377,7 +381,7 @@ PRINT CHR$(219)
 LOCATE t, x + 1
 PRINT CHR$(219)
 NEXT i
-FOR w = 1 TO 60000
+FOR w = 1 TO 60000 * timeFactor
 NEXT w
 
 FOR i = 1 TO 13
@@ -389,7 +393,7 @@ PRINT CHR$(219)
 LOCATE t, x + 1
 PRINT CHR$(219)
 NEXT i
-FOR w = 1 TO 60000
+FOR w = 1 TO 60000 * timeFactor
 NEXT w
 
 FOR i = 0 TO 12
@@ -408,8 +412,8 @@ LET extra = extra + 1
 LET score = score + 9 + extra
 LET score = score + ((9 + extra) * multiplier)
 LET lines = lines + 1
-LET settime = settime - 500
-IF settime < 8500 THEN LET settime = 8500
+LET settime = settime - (500 * timeFactor)
+IF settime < (8500 * timeFactor) THEN LET settime = (8500 * timeFactor)
 zeroblocks
 graphics
 rr$ = INKEY$
@@ -503,7 +507,7 @@ PLAY "<l2cl4cmll2fffl2cl4fmll2aaa>"
 LOCATE 1, 36
 COLOR 12
 FOR i = 1 TO 12
-FOR t = 1 TO 10000
+FOR t = 1 TO 10000 * timeFactor
 NEXT t
 COLOR 0
 IF (i * 3) - 3 > 0 THEN LOCATE i, (i * 3) - 3
@@ -554,7 +558,7 @@ LET noload = 0
 LET fromgame = 0
 LET notgame = 0
 
-LET settime = 75000
+LET settime = 75000 * timeFactor
 RANDOMIZE TIMER
 nextblocknumber = INT(RND * 7) + 1
 startgame2
@@ -1287,113 +1291,113 @@ COLOR 12
 
 LOCATE 13, 1
 PRINT "!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "S!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "IS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "RIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "TRIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "ETRIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 1
 PRINT "TETRIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 FOR i = 1 TO 36
 LOCATE 13, i
 PRINT " TETRIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 NEXT i
 
-FOR ii = 1 TO 300000
+FOR ii = 1 TO 300000 * timeFactor
 NEXT ii
 
 COLOR 9
 LOCATE 13, i
 PRINT "TETRIS!"
 
-FOR ii = 1 TO 300000
+FOR ii = 1 TO 300000 * timeFactor
 NEXT ii
 
 
 FOR i = 36 TO 73
 LOCATE 13, i
 PRINT " TETRIS!"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 NEXT i
 
 LOCATE 13, 74
 PRINT " TETRIS"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 75
 PRINT " TETRI"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 76
 PRINT " TETR"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 77
 PRINT " TET"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 78
 PRINT " TE"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 79
 PRINT " T"
-FOR d = 1 TO 10000
+FOR d = 1 TO 10000 * timeFactor
 NEXT d
 
 LOCATE 13, 80
 PRINT " "
-FOR d = 1 TO 12000
+FOR d = 1 TO 12000 * timeFactor
 NEXT d
 
 COLOR 15
 LOCATE 13, 36
 PRINT "TETRIS!"
-FOR d = 1 TO 90000
+FOR d = 1 TO 90000 * timeFactor
 NEXT d
 COLOR 0
 LOCATE 13, 36
 PRINT "TETRIS!"
-FOR d = 1 TO 85000
+FOR d = 1 TO 85000 * timeFactor
 NEXT d
 COLOR 15
 LOCATE 13, 36
 PRINT "TETRIS!"
-FOR d = 1 TO 270000
+FOR d = 1 TO 270000 * timeFactor
 NEXT d
 
 asktop:
