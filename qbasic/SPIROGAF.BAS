@@ -1,3 +1,7 @@
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
+
 CLS
 SCREEN 12
 
@@ -34,7 +38,7 @@ LET x = x + a + 320
 LET y = y + b + 240
 PSET (x, y), c
 IF g = a THEN LET h = h + 1: LOCATE 3, 3: PRINT h: a = a + 360
-FOR i = 1 TO 1000
+FOR i = 1 TO 1000 * timeFactor
 NEXT i
 LOOP
 

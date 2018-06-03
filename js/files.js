@@ -366,27 +366,27 @@ window.files = [
     },
     {
         name: 'SPIRO.BAS',
-        description: '',
+        description: 'A precursor to my more modern project <a target="_blank" href="https://nathanfriend.io/inspirograph">Inspirograph</a>, this program creates Spirograph designs based on a few simple configurations.<br /><br />Hint: If you don\'t know what values to use, try something like:<br /><br />&nbsp;&nbsp;Inner wheel size: 52<br />&nbsp;&nbsp;Outer wheel size: 100<br />&nbsp;&nbsp;Hole number: 25<br />&nbsp;&nbsp;Color: 12',
         command: 'SPIRO.BAT'
     },
     {
         name: 'SPIRO3.BAS',
-        description: '',
+        description: 'Similar to SPIRO.BAS, but uses a different algorithm to draw the shapes.',
         command: 'SPIRO3.BAT'
     },
     {
         name: 'SPIROGAF.BAS',
-        description: '',
+        description: 'A precursor to SPIRO.BAS.  This program\'s drawing algorithm seems a bit off.',
         command: 'SPIROGAF.BAT'
     },
     {
         name: 'SPIROTWO.BAS',
-        description: '',
+        description: 'Similar to SPIRO.BAS, but without any configuration options.',
         command: 'SPIROTWO.BAT'
     },
     {
         name: 'STOPLITE.BAS',
-        description: '',
+        description: 'An animated stoplight.',
         command: 'STOPLITE.BAT'
     },
     {
@@ -397,28 +397,23 @@ window.files = [
     },
     {
         name: 'STRMYDAY.BAS',
-        description: '',
+        description: 'An animation of a storm cloud that throws a randomly-generated lightning bolt every few seconds.  Be sure to turn on your speakers so you can hear the thunder!',
         command: 'STRMYDAY.BAT'
     },
     {
         name: 'SUITE1.BAS',
-        description: '',
+        description: 'Bach\'s Cello Suite No. 1 - Prelude.',
         command: 'SUITE1.BAT'
     },
     {
         name: 'SWEET!!!.BAS',
-        description: '',
+        description: 'A pulsating red circle, which I apparently thought was pretty cool, based on the filename!',
         command: 'SWEET!!!.BAT'
     },
     {
         name: 'SWEET!!.BAS',
-        description: '',
+        description: 'Similar to SWEET!!!.BAS, except only the border of the circle pulsates.',
         command: 'SWEET!!.BAT'
-    },
-    {
-        name: 'TEST.BAT',
-        description: '',
-        command: 'TEST.BAT'
     },
     {
         name: 'TETRIS.BAS',
@@ -428,12 +423,12 @@ window.files = [
     },
     {
         name: 'TETRSMUS.BAS',
-        description: '',
+        description: 'The first couple of lines to the theme music used for NEWTETRS.BAS.',
         command: 'TETRSMUS.BAT'
     },
     {
         name: 'UNECODER.BAS',
-        description: '',
+        description: 'Based on the filename, this is the counterpart program to ECODER.BAS, but it doesn\'t seem to work.',
         command: 'UNECODER.BAT'
     },
     {
@@ -443,7 +438,7 @@ window.files = [
     },
     {
         name: 'VOLUMES.BAS',
-        description: '',
+        description: 'A program the calculates the volumes of various solids.',
         command: 'VOLUMES.BAT'
     },
     {
@@ -453,7 +448,7 @@ window.files = [
     },
     {
         name: 'WSTMNSTR.BAS',
-        description: '',
+        description: 'The Westminster Quarters melody.',
         command: 'WSTMNSTR.BAT'
     }
 ];

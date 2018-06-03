@@ -1,3 +1,7 @@
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
+
 CLS
 SCREEN 12
 top:
@@ -15,7 +19,7 @@ PAINT (300, 100), 7, 7
 PAINT (300, 55), 7, 7
 PAINT (350, 200), 7, 7
 RANDOMIZE TIMER
-v = INT(RND * 50000) + 30000
+v = INT(RND * 50000 * timeFactor) + 30000 * timeFactor
 
 FOR i = 1 TO v
 NEXT i
@@ -72,7 +76,7 @@ END SELECT
 
 LINE (templw, templl)-(lw, ll), 14
 
-FOR p = 1 TO 5000
+FOR p = 1 TO 5000 * timeFactor
 NEXT p
        
 LOOP

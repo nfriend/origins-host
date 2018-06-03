@@ -1,3 +1,7 @@
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
+
 CLS
 SCREEN 12
 SLEEP 3
@@ -25,8 +29,8 @@ LET a = COS(i * g * 5.1) * 80
 LET b = SIN(i * g * 5.1) * 80
 PSET (x + 320 + a, y + 240 + b), colors
 IF i = 1 THEN LET startx = x + 320 + b: LET starty = y + 240 + a: LET g = 1
-FOR k = 1 TO 1000
-xNEXT k
+FOR k = 1 TO 1000 * timeFactor
+NEXT k
 NEXT i
 LOOP
 

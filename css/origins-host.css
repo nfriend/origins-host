@@ -10,6 +10,11 @@
     font-family: 'MSDOS', monospace;
 }
 
+a {
+    color: white;
+    text-decoration: underline;
+}
+
 .dosbox-container * {
     color: white !important;
 }

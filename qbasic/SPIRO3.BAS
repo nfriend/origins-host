@@ -1,3 +1,7 @@
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
+
 CLS
 SCREEN 12
 INPUT "Inner Wheel Size?  ", iner
@@ -17,7 +21,7 @@ LET y = SIN(i * h) * finaliner
 LET a = COS(i * h * 4.2) * iner
 LET b = SIN(i * h * 4.2) * iner
 PSET ((x + 320 + a), (y + 240 + b)), c
-FOR d = 1 TO 3000
+FOR d = 1 TO 3000 * timeFactor
 NEXT d
 LOOP
 
