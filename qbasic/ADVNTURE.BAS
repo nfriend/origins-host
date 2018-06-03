@@ -23,6 +23,12 @@ COMMON SHARED food, health, experience, c, r, maxhealth, gold, eedu, eagi, estr
 COMMON SHARED dagger$, sword$, shield$, armor$
 COMMON SHARED ehealth, emaxhealth
 COMMON SHARED what$, totalend, numt, map, b, bb, final, searched
+COMMON SHARED timeFactor
+
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
+
 DIM SHARED m$(2000)
 DIM SHARED townl(9)
 DIM SHARED townw(9)
@@ -147,7 +153,7 @@ COLOR 9
 PRINT CHR$(254)
 NEXT e
        
-        FOR i = 1 TO times
+        FOR i = 1 TO times * timeFactor
         NEXT i
                 LOCATE 23
                 COLOR 15
@@ -272,13 +278,13 @@ FOR i = 1 TO 22
         COLOR 0
         IF i > 1 THEN LOCATE i - 1, 40
         PRINT CHR$(5)
-        FOR y = 1 TO 100000
+        FOR y = 1 TO 100000 * timeFactor
         NEXT y
 NEXT i
 COLOR 6
 LOCATE 22, 40
 PRINT CHR$(219)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 39
 PRINT CHR$(178)
@@ -290,7 +296,7 @@ LOCATE 22, 38
 PRINT CHR$(178)
 LOCATE 22, 42
 PRINT CHR$(178)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 43
 PRINT CHR$(177)
@@ -310,7 +316,7 @@ LOCATE 21, 38
 PRINT CHR$(177)
 LOCATE 21, 42
 PRINT CHR$(177)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 35
 PRINT CHR$(176)
@@ -324,7 +330,7 @@ LOCATE 20, 39
 PRINT CHR$(176)
 LOCATE 20, 41
 PRINT CHR$(176)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 39
 PRINT CHR$(177)
@@ -336,7 +342,7 @@ LOCATE 22, 38
 PRINT CHR$(177)
 LOCATE 22, 42
 PRINT CHR$(177)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 43
 PRINT CHR$(176)
@@ -358,7 +364,7 @@ LOCATE 21, 42
 PRINT CHR$(176)
 LOCATE 22, 40
 PRINT CHR$(177)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 COLOR 0
 LOCATE 22, 35
@@ -374,7 +380,7 @@ PRINT CHR$(176)
 LOCATE 20, 41
 PRINT CHR$(176)
 COLOR 6
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 39
 PRINT CHR$(176)
@@ -386,7 +392,7 @@ LOCATE 22, 38
 PRINT CHR$(176)
 LOCATE 22, 42
 PRINT CHR$(176)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 43
 PRINT CHR$(176)
@@ -409,7 +415,7 @@ PRINT CHR$(176)
 COLOR 6
 LOCATE 22, 40
 PRINT CHR$(178)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 COLOR 0
 LOCATE 22, 43
@@ -433,7 +439,7 @@ PRINT CHR$(176)
 COLOR 6
 LOCATE 22, 40
 PRINT CHR$(177)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 COLOR 6
 LOCATE 22, 40
@@ -449,7 +455,7 @@ LOCATE 22, 42
 PRINT CHR$(176)
 LOCATE 21, 40
 PRINT CHR$(176)
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 22, 40
 COLOR 6
@@ -457,7 +463,7 @@ PRINT CHR$(5)
 LOCATE 1, 1
 COLOR 15
 PRINT "You land, startled but unhurt. You brush yourself off..."
-FOR u = 1 TO 1000000
+FOR u = 1 TO 1000000 * timeFactor
 NEXT u
 LOCATE 22, 40
 COLOR 14
@@ -467,7 +473,7 @@ COLOR 15
 LOCATE 22, 39
 PRINT CHR$(127)
 PRINT "You grope around in the darknes and finally are able to light a lamp."
-FOR u = 1 TO 1000000
+FOR u = 1 TO 1000000 * timeFactor
 NEXT u
 uip:
 LOCATE 1, 1
@@ -512,7 +518,7 @@ foundhim:
 LOCATE voltaukl, voltaukw
 COLOR 10
 PRINT CHR$(21)
-FOR i = 1 TO 1000000
+FOR i = 1 TO 1000000 * timeFactor
 NEXT i
 LET final = 1
 fight
@@ -530,7 +536,7 @@ SUB eight
         LOCATE i, 42
         PRINT CHR$(219)
         NEXT i
-        FOR y = 1 TO times
+        FOR y = 1 TO times * timeFactor
         NEXT y
         COLOR 0
         LOCATE 14, 43
@@ -580,15 +586,15 @@ PRINT "Searching"
 SLEEP 1
 LOCATE 3, 3
 PRINT "Searching."
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 3, 3
 PRINT "Searching.."
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 LOCATE 3, 3
 PRINT "Searching..."
-FOR i = 1 TO 100000
+FOR i = 1 TO 100000 * timeFactor
 NEXT i
 RANDOMIZE TIMER
 victim = INT(RND * 10) + 1
@@ -1133,7 +1139,7 @@ PRINT "Health: "; CINT(e); "%    ";
                 LOCATE 12, u
                 COLOR 12
                 PRINT CHR$(219)
-                FOR i = 1 TO times / 32
+                FOR i = 1 TO (times / 32) * timeFactor
                 IF block <= 5 THEN LET block = 4: LET eee = 99999999
                 NEXT i
                
@@ -1171,7 +1177,7 @@ PRINT "Health: "; CINT(e); "%    ";
                 PRINT CHR$(219)
                 COLOR 0
                 PRINT CHR$(219)
-                FOR i = 1 TO times / 32
+                FOR i = 1 TO (times / 32) * timeFactor
                 NEXT i
                 NEXT u
 
@@ -1732,7 +1738,7 @@ SUB two
                 LOCATE 14, 43
                 PRINT CHR$(219)
              
-                FOR y = 1 TO times
+                FOR y = 1 TO times * timeFactor
                 NEXT y
 
                 COLOR 0

@@ -49,7 +49,7 @@ DECLARE SUB main ()
 DECLARE SUB enemychange ()
 COMMON SHARED name$, x, y, money, food, peak, health, alreadyfought, back
 COMMON SHARED dagger, axe, sword, helmet, armor, shield, enemynumber, tfood
-COMMON SHARED vision, playerx, playery, reaction
+COMMON SHARED vision, playerx, playery, reaction, timeFactor
 
 CLOSE
 
@@ -62,6 +62,9 @@ DIM SHARED ey(20)
 
 DIM SHARED averagetime(500)
 
+'Added in 2018 to allow for CPU time adjustment
+'All timer loops will be multiplied by this factor
+LET timeFactor = 0.0135
 
 LET money = 15
 LET food = 20
@@ -236,7 +239,7 @@ PLAY "<<t50l4ce-l2gmll8fe-msdml<b>l2c "
 LOCATE 1, 36
 COLOR 12
 FOR i = 1 TO 23
-FOR t = 1 TO 10000
+FOR t = 1 TO 10000 * timeFactor
 NEXT t
 COLOR 0
 LOCATE i, 36
@@ -367,14 +370,14 @@ PRINT "Enemies Health:"; ehealth; "out of"; epeak; "                 "
 RANDOMIZE TIMER
 sleeptime = INT(RND * 2000000) + 160000
 
-FOR i = 1 TO sleeptime
+FOR i = 1 TO sleeptime * timeFactor
 LET r$ = INKEY$
 NEXT i
 
 
 
 COLOR , 12
-FOR i = 1 TO 10000
+FOR i = 1 TO 10000 * timeFactor
 NEXT i
 COLOR 0, 0
 
@@ -847,12 +850,12 @@ FOR tester = 1 TO 5
 RANDOMIZE TIMER
 sleeptime = INT(RND * 1000) + 100
 
-FOR i = 1 TO sleeptime
+FOR i = 1 TO sleeptime * timeFactor
 LET r$ = INKEY$
 NEXT i
 
 COLOR , 12
-FOR i = 1 TO 10000
+FOR i = 1 TO 10000 * timeFactor
 NEXT i
 COLOR , 0
 

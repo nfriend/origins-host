@@ -7,12 +7,25 @@ window.files = [
     },
     {
         name: 'ADVNTUR1.BAS',
-        description: 'A partially-finished adventure game.',
+        description: 'A partially-finished adventure game, similar to ADVNTURE.BAS.',
         command: 'ADVNTUR1.BAT'
     },
     {
         name: 'ADVNTURE.BAS',
-        description: '',
+        description:
+            "An adventure game.  Some instructions from the program's comments:<br /><br />" +
+            'To navigate your person (Blue Square) around the world, use the number pad.<br />' +
+            '8 = up&nbsp;&nbsp;2 = down&nbsp;&nbsp;4 = left&nbsp;&nbsp;5 = right&nbsp;&nbsp;SPACE = menu<br />' +
+            'Red squares are enemies-move into their area to fight them.<br />' +
+            'Gain food and money by defeating the enemies.<br />' +
+            'Once you have conquered all 20 enemies, you win... or do you?<br />' +
+            'Green squares are cities.  Move into them to enter the city.<br />' +
+            'In the cities you can buy lessons to improve your endurance, get healed, or buy different pieces of armor or different weapons.<br />' +
+            'When you move into an enemies square, you will be brought to the fighting screen.<br />' +
+            'Wait until the screen flashes red, and press SPACE as quickly as possible.<br />' +
+            'The faster you press ENTER, the more damage you will do to you enemy.<br />' +
+            "Don't let him kill you first!<br />" +
+            'Have fun!',
         command: 'ADVNTURE.BAT'
     },
     {
@@ -54,7 +67,7 @@ window.files = [
     {
         name: 'BATLSHIP.BAS',
         description:
-            'The beginnings of a Battleship game.  This one never made it past printing the intial game board.',
+            'The beginnings of a Battleship game.  This one never made it past printing the initial game board.',
         command: 'BATLSHIP.BAT'
     },
     {
@@ -66,7 +79,7 @@ window.files = [
     {
         name: 'CELOHELP.BAS',
         description:
-            'A flash-card game for cello students.  Users can be quized on their knowledge of bass clef, tenor clef, or treble clef.  See if you can make the high score list!',
+            'A flash-card game for cello students.  Users can be quizzed on their knowledge of bass clef, tenor clef, or treble clef.  See if you can make the high score list!',
         command: 'CELOHELP.BAT'
     },
     {
@@ -95,7 +108,7 @@ window.files = [
     {
         name: 'CNVRSNS.BAS',
         description:
-            "A unit conversion utility.  Doesns't seem to work very well - 57 millimeters equals 57 inches??",
+            "A unit conversion utility.  Doesn't seem to work very well - 57 millimeters equals 57 inches??",
         command: 'CNVRSNS.BAT'
     },
     // {
@@ -122,7 +135,7 @@ window.files = [
     {
         name: 'COOL.BAS',
         description:
-            "One of my favorite programs.  This program draws intricate esigns to the screen using the color palette of the user's choice.  Users can create their own color palettes, which are saved to the filesystem for later use.",
+            "One of my favorite programs.  This program draws intricate designs to the screen using the color palette of the user's choice.  Users can create their own color palettes, which are saved to the file system for later use.",
         command: 'COOL.BAT'
     },
     {
@@ -163,7 +176,7 @@ window.files = [
     {
         name: 'FALLING!.BAS',
         description:
-            'An ASCII animation of a small character falling, complete with sound effects.  This was originally going to be a cutscene for my ADVNTURE.BAS game.',
+            'An ASCII animation of a small character falling, complete with sound effects.  This was originally going to be a cut scene for my ADVNTURE.BAS game.',
         command: 'FALLING!.BAT'
     },
     // {
@@ -256,7 +269,7 @@ window.files = [
     {
         name: 'MORSE.BAS',
         description:
-            'A program that converts text to Morse code.  Start typing once the program starts to both see and hear your converted morse code.',
+            'A program that converts text to Morse code.  Start typing once the program starts to both see and hear your converted Morse code.',
         command: 'MORSE.BAT'
     },
     // {
@@ -337,7 +350,7 @@ window.files = [
     //     description: '',
     //     command: 'RINGS.BAT'
     // },
-    // 
+    //
     // This one is identical to DRAW!.BAS
     // {
     //     name: 'SAVEDRAW.BAS',
@@ -346,7 +359,8 @@ window.files = [
     // },
     {
         name: 'SCRAMBLR.BAS',
-        description: 'An encryption tool that scrambles a secret message and writes it to a file.  Unfortunately, it seems that the corresponding program, UNSRMBLR.BAS, is broken, so we\'ll never know if it works!',
+        description:
+            "An encryption tool that scrambles a secret message and writes it to a file.  Unfortunately, it seems that the corresponding program, UNSRMBLR.BAS, is broken, so we'll never know if it works!",
         command: 'SCRAMBLR.BAT'
     },
     {
@@ -361,27 +375,32 @@ window.files = [
     },
     {
         name: 'SHOOTER.BAS',
-        description: 'A small proof-of-concept game that allows the user to control a small red block (using "1", "2", "3", "5") which shoots lime green bullets (using "space").',
+        description:
+            'A small proof-of-concept game that allows the user to control a small red block (using "1", "2", "3", "5") which shoots lime green bullets (using "space").',
         command: 'SHOOTER.BAT'
     },
     {
         name: 'SPIRO.BAS',
-        description: 'A precursor to my more modern project <a target="_blank" href="https://nathanfriend.io/inspirograph">Inspirograph</a>, this program creates Spirograph designs based on a few simple configurations.<br /><br />Hint: If you don\'t know what values to use, try something like:<br /><br />&nbsp;&nbsp;Inner wheel size: 52<br />&nbsp;&nbsp;Outer wheel size: 100<br />&nbsp;&nbsp;Hole number: 25<br />&nbsp;&nbsp;Color: 12',
+        description:
+            'A precursor to my more modern project <a target="_blank" href="https://nathanfriend.io/inspirograph">Inspirograph</a>, this program creates Spirograph designs based on a few simple configurations.<br /><br />Hint: If you don\'t know what values to use, try something like:<br /><br />&nbsp;&nbsp;Inner wheel size: 52<br />&nbsp;&nbsp;Outer wheel size: 100<br />&nbsp;&nbsp;Hole number: 25<br />&nbsp;&nbsp;Color: 12',
         command: 'SPIRO.BAT'
     },
     {
         name: 'SPIRO3.BAS',
-        description: 'Similar to SPIRO.BAS, but uses a different algorithm to draw the shapes.',
+        description:
+            'Similar to SPIRO.BAS, but uses a different algorithm to draw the shapes.',
         command: 'SPIRO3.BAT'
     },
     {
         name: 'SPIROGAF.BAS',
-        description: 'A precursor to SPIRO.BAS.  This program\'s drawing algorithm seems a bit off.',
+        description:
+            "A precursor to SPIRO.BAS.  This program's drawing algorithm seems a bit off.",
         command: 'SPIROGAF.BAT'
     },
     {
         name: 'SPIROTWO.BAS',
-        description: 'Similar to SPIRO.BAS, but without any configuration options.',
+        description:
+            'Similar to SPIRO.BAS, but without any configuration options.',
         command: 'SPIROTWO.BAT'
     },
     {
@@ -397,22 +416,25 @@ window.files = [
     },
     {
         name: 'STRMYDAY.BAS',
-        description: 'An animation of a storm cloud that throws a randomly-generated lightning bolt every few seconds.  Be sure to turn on your speakers so you can hear the thunder!',
+        description:
+            'An animation of a storm cloud that throws a randomly-generated lightning bolt every few seconds.  Be sure to turn on your speakers so you can hear the thunder!',
         command: 'STRMYDAY.BAT'
     },
     {
         name: 'SUITE1.BAS',
-        description: 'Bach\'s Cello Suite No. 1 - Prelude.',
+        description: "Bach's Cello Suite No. 1 - Prelude.",
         command: 'SUITE1.BAT'
     },
     {
         name: 'SWEET!!!.BAS',
-        description: 'A pulsating red circle, which I apparently thought was pretty cool, based on the filename!',
+        description:
+            'A pulsating red circle, which I apparently thought was pretty cool, based on the filename!',
         command: 'SWEET!!!.BAT'
     },
     {
         name: 'SWEET!!.BAS',
-        description: 'Similar to SWEET!!!.BAS, except only the border of the circle pulsates.',
+        description:
+            'Similar to SWEET!!!.BAS, except only the border of the circle pulsates.',
         command: 'SWEET!!.BAT'
     },
     {
@@ -423,17 +445,20 @@ window.files = [
     },
     {
         name: 'TETRSMUS.BAS',
-        description: 'The first couple of lines to the theme music used for NEWTETRS.BAS.',
+        description:
+            'The first couple of lines to the theme music used for NEWTETRS.BAS.',
         command: 'TETRSMUS.BAT'
     },
     {
         name: 'UNECODER.BAS',
-        description: 'Based on the filename, this is the counterpart program to ECODER.BAS, but it doesn\'t seem to work.',
+        description:
+            "Based on the filename, this is the counterpart program to ECODER.BAS, but it doesn't seem to work.",
         command: 'UNECODER.BAT'
     },
     {
         name: 'UNSRMBLR.BAS',
-        description: 'The counterpart to SCRAMBLR.BAS.  Unfortunately it\'s broken!',
+        description:
+            "The counterpart to SCRAMBLR.BAS.  Unfortunately it's broken!",
         command: 'UNSRMBLR.BAT'
     },
     {
@@ -443,7 +468,8 @@ window.files = [
     },
     {
         name: 'WORDS!.BAS',
-        description: '',
+        description:
+            "I'm not sure what the purpose of this program is.  It prompts the user to input a series of words, and save mutated versions of those words in a file.",
         command: 'WORDS!.BAT'
     },
     {
