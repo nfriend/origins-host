@@ -146,7 +146,7 @@ $(function() {
 
     window.reloadPage = function() {
         console.log(window.location.href);
-        window.location.href = window.location.href.replace(/\?.*$/, '');
-        //window.location.reload();
+        //window.location.href = window.location.href.replace(/\?.*$/, '');
+        window.location.reload();
     };
 });
