@@ -2,54 +2,56 @@
 <html lang="en-us">
 
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type"
-              content="text/html; charset=utf-8">
-        <title>origins-host</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8">
+    <title>origins-host</title>
 
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-        <link rel="stylesheet"
-              href="css/origins-host.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="css/origins-host.css">
 </head>
 
 <body>
+    <div class="origins-container">
         <div id="dosbox"></div>
 
         <div id="toolbar-button-group-container">
-                <div id="toolbar-button-group"
-                     class="btn-group"
-                     role="group"
-                     aria-label="Basic example">
-                        <button id="fullscreen-button"
-                                type="button"
-                                class="btn btn-dark"
-                                onclick="window.dosbox.requestFullScreen();"
-                                disabled="disabled">Make Fullscreen</button>
-                        <button type="button"
-                                class="btn btn-dark"
-                                onclick="window.reloadPage();">Start Over</button>
-                </div>
+            <div id="toolbar-button-group"
+                 class="btn-group"
+                 role="group"
+                 aria-label="Basic example">
+                <button id="fullscreen-button"
+                        type="button"
+                        class="btn btn-dark"
+                        onclick="window.dosbox.requestFullScreen();"
+                        disabled="disabled">Make Fullscreen</button>
+                <button type="button"
+                        class="btn btn-dark"
+                        onclick="window.reloadPage();">Start Over</button>
+            </div>
         </div>
 
         <div id="origins-overlay">
-                <div>Use the arrow keys And ENTER to select a file to run:</div>
-                <br />
-                <div class="file-name-container"></div>
-                <div class="file-description-container"></div>
+            <div>Use the arrow keys And ENTER to select a file to run:</div>
+            <br />
+            <div class="file-name-container"></div>
+            <div class="file-description-container"></div>
         </div>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-                crossorigin="anonymous"></script>
-        <script type="text/javascript"
-                src="third-party/js-dos-api.js"></script>
-        <script type="text/javascript"
-                src="js/files.js"></script>
-        <script type="text/javascript"
-                src="js/origins-host.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="third-party/js-dos-api.js"></script>
+    <script type="text/javascript"
+            src="js/files.js"></script>
+    <script type="text/javascript"
+            src="js/origins-host.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,17 @@
 @font-face {
     font-family: MSDOS;
-    /* src: url(../fonts/dos.ttf); */
     src: url(../fonts/LessPerfectDOSVGA.ttf);
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.origins-container {
+    margin: 0 auto;
+    width: 640px;
 }
 
 .dosbox-container {
