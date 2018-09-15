@@ -1,5 +1,5 @@
 {
-  "name": "origins-host",
+  "name": "@nathanfriend/origins-host",
   "version": "1.0.0",
   "description": "A js-box (DOSBox) app to allow my old QBASIC programs to live on through the internet",
   "scripts": {
@@ -16,12 +16,11 @@
     "url": "https://github.com/nfriend/origins-host/issues"
   },
   "homepage": "https://github.com/nfriend/origins-host#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "archiver": "^2.1.1",
+    "http-server": "^0.11.1",
     "livereload": "^0.7.0",
     "node-watch": "^0.5.8"
-  },
-  "devDependencies": {
-    "http-server": "^0.11.1"
   }
 }
